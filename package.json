@@ -1,0 +1,16 @@
+{
+  "name": "EarthBnB",
+  "version": "1.0.0",
+  "description": "A final project for CIT41200, We will build a knock off/ cheap immitation of airBnB using housing data for the Seattle market area.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.iu.edu/atclarks/EarthBnB.git"
+  },
+  "keywords": [],
+  "author": "Team U4",
+  "license": "ISC"
+}
