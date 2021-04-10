@@ -1,6 +1,10 @@
-var express = require('express');
-var router = express.Router();
-router.get('/', function(req, res, next) {
-  return res.status(200).json({ message: 'Welcome to EarthBnB API' });
+import express from 'express';
+import { welcomeMessage } from '../settings';
+
+const indexRouter = express.Router();
+
+indexRouter.get('/', (req, res) => {
+  res.status(200).json({ message: welcomeMessage });
 });
-module.exports = router;
+
+export default indexRouter;
