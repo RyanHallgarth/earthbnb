@@ -1,10 +1,10 @@
 import express from 'express';
 import { welcomeMessage } from '../settings';
 
-const indexRouter = express.Router();
+const serverRouter = express.Router();
 
-indexRouter.get('/', (req, res) => {
+serverRouter.get('/', (req, res) => {
   res.status(200).json({ message: welcomeMessage });
 });
 
-export default indexRouter;
+export default serverRouter;
