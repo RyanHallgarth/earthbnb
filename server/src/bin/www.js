@@ -3,9 +3,9 @@
 /**
  * Module dependencies.
  */
-import debug from 'debug';
-import http from 'http';
-import app from '../app';
+const debug = require('debug');
+const http = require('http');
+const app = require('../app');
 /**
  * Normalize a port into a number, string, or false.
  */

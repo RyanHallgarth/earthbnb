@@ -1,4 +1,5 @@
-import dotenv from 'dotenv';
+const dotenv = require('dotenv').config();
 
-dotenv.config();
-export const welcomeMessage = process.env.WELCOME_MESSAGE;
+const welcomeMessage = process.env.WELCOME_MESSAGE;
+
+module.exports = welcomeMessage;
