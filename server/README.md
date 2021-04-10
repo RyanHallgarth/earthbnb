@@ -1,7 +1,8 @@
 # EarthBnB API
-Server API is set up.  
 
-- You can run `npm install`. 
+Server API is set up.
+
+- You can run `npm install`.
 - Then `npm run start`.
 
 If you’ve set up everything correctly you should only see `$ node ./src/bin/www` in your terminal.
@@ -13,3 +14,90 @@ Visit `http://localhost:3000/v1` (of course if you have a `PORT` environment var
   "message": "Welcome to EarthBnB API"
 }
 ```
+
+## **login**
+
+This will initiate a google login
+
+- **URL**
+
+  /api/auth/login
+
+- **Method:**
+
+  `GET`
+
+- **Success Response:**
+
+  On succesful login a user object from the mongoDB will be returned
+
+  - **Code:** 200 <br />
+    **Content:**
+    ```json
+    {
+      "_id":"6071f52eeefc1bd3b2030451",
+      "providerID":"104172443333147730799",
+      "provider":"google",
+      "firstName":"Adam",
+      "lastName":"Clarkson",
+      "displayName":"Adam Clarkson",
+      "email":"atclarks@iu.edu",
+      "picture":"https://lh3.googleusercontent.com/a-/AOh14GjU3gmwv-PdxvlaWYVg8voLn_MvA653EtQkjUc2=s96-c",
+      "providerProfile":{[OBJECT]},
+      "__v":0
+    }
+    ```
+
+- **Sample Call:**
+
+  ```javascript
+  axios
+    .get('/api/auth/login', userData)
+    .then((res) => {
+      console.log(res);
+    })
+    .catch((err) => {
+      console.log(err);
+      console.log(err.response);
+    });
+  ```
+
+- **Notes:**
+
+  This needs tested. Works in browser, I'm also not 100% sure on the sample call. -ATC 4/12
+
+## **logout**
+
+This will initiate a google logout
+
+- **URL**
+
+  /api/auth/logout
+
+- **Method:**
+
+  `GET`
+
+- **Success Response:**
+
+  On succesful logout a success message will be returned
+
+  - **Code:** 200 <br />
+    **Content:**
+    ```json
+    {
+      "message": "User has been successfully logged out."
+    }
+    ```
+
+- **Sample Call:**
+
+  ```javascript
+  fetch('/api/auth/logout')
+    .then((response) => response.json())
+    .then((data) => console.log(data));
+  ```
+
+- **Notes:**
+
+  This needs tested. Works in browser, I'm also not 100% sure on the sample call. -ATC 4/12
