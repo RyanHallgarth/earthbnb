@@ -4,6 +4,7 @@
   "description": "A final project for CIT41200, We will build a knock off/ cheap immitation of airBnB using housing data for the Seattle market area.",
   "main": "index.js",
   "scripts": {
+    "dev": "concurrently \"cd server && npm run startdev\" \"cd client && npm start\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,5 +13,8 @@
   },
   "keywords": [],
   "author": "Team U4",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.0.1"
+  }
 }
