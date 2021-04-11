@@ -10,10 +10,10 @@ const selectListings = async (
 ) => {
   // TODO Create the actual connection to mysql DB
   connection.query(
-    'SELECT COUNT * FROM listings; SELECT * FROM listings ORDER BY ?? ?? LIMIT ?? OFFSET ??', [sortBy, order, limit, skipIndex],
+    `SELECT COUNT(*) as count FROM listings; SELECT * FROM listings ORDER BY ${connection.escape(sortBy)} ${connection.escape(order)} LIMIT ${connection.escape(limit)} OFFSET ${connection.escape(skipIndex)};`,
     (error, results) => {
-      if (error) throw error;
-      callback(results);
+      if (error) callback({"error": error});
+      else callback(results);
     }
   );
 };
@@ -39,13 +39,30 @@ const paginatedResults = () => {
     } else if (page < 1){
         res.status(422).json({"error": "Page must be greater than 0"});
     } else if (order != 'ASC' && order != 'DESC'){
-        res.status(422).json({"error": "Order may only be asc|desc"});
+        res.status(422).json({"error": "Order may only be ASC|DESC"});
     } else {
         try {
             results.results = await selectListings(
                 limit, skipIndex, sortBy, order, (listings) => {
-                // TODO add current page, or last page and previous page info to JSON before sending
-                    res.json({ listings });
+                    if ("error" in listings) res.status(503).json(listings);
+                    else {
+                        const totalResults = listings[0][0].count;
+                        const lastPage = Math.ceil(totalResults / limit);
+                        let listingsObj = {
+                            content: listings[1],
+                            page: page,
+                            results_per_page: limit,
+                            total_results: totalResults,
+                            links: {},
+                        };
+                        listingsObj.links.self =  { href: `/v1/listings?page=${page}&limit=${limit}&sort_by=${sortBy}&order=${order}`};
+                        listingsObj.links.first = { href: `/v1/listings?page=1&limit=${limit}&sort_by=${sortBy}&order=${order}`};
+                        listingsObj.links.prev = (page <= 1) ? { href: null} : { href:`/v1/listings?page=${page-1}&limit=${limit}&sort_by=${sortBy}&order=${order}`};
+                        listingsObj.links.last = { href:`/v1/listings?page=${lastPage}&limit=${limit}&sort_by=${sortBy}&order=${order}`};
+                        listingsObj.links.next = (page >= lastPage) ? { href: null} : { href:`/v1/listings?page=${page+1}&limit=${limit}&sort_by=${sortBy}&order=${order}`};
+                    
+                        res.json(listingsObj);
+                    };
                 }
             );
         } catch (error) {}
