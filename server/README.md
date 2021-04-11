@@ -261,5 +261,9 @@ Listings will return a list of listings page by page.
   ```
 
 - **Notes:**
-
-  <_This is where all uncertainties, commentary, discussion etc. can go. I recommend timestamping and identifying oneself when leaving comments here._>
+  - This endpoint is still a work in progress
+  #### TODO
+  - [ ] Connect to Database
+  - [ ] add additinal info to JSON response, page, results_per_page and total_results
+  - [ ] escape parameters before plugging into sql DB
+  - [ ] rewrite query to return total counts of listing or maybe need two querys
