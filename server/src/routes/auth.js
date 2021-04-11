@@ -21,7 +21,7 @@ router.get('/user', (req, res) => {
 /* GET to Google login screen. */
 router.get(
   '/login',
-  passport.authenticate('google', { scope: ['profile', 'email'] }),
+  passport.authenticate('google', { scope: ['profile', 'email'] })
 );
 
 /* GET to logout screen. */
@@ -39,7 +39,7 @@ router.get(
   passport.authenticate('google', { failureRedirect: '/users/login' }),
   (req, res) => {
     res.json(req.user);
-  },
+  }
 );
 
 module.exports = router;
