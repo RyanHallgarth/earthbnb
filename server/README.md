@@ -263,7 +263,7 @@ Listings will return a list of listings page by page.
 - **Notes:**
   - This endpoint is still a work in progress
   #### TODO
-  - [ ] Connect to Database
+  - [x] Connect to Database
   - [ ] add additinal info to JSON response, page, results_per_page and total_results
-  - [ ] escape parameters before plugging into sql DB
+  - [x] escape parameters before plugging into sql DB
   - [ ] rewrite query to return total counts of listing or maybe need two querys
