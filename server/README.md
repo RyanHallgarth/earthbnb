@@ -229,10 +229,34 @@ Listings will return a list of listings page by page.
     **Content:**
     ```json
     {
-      "content": [], // all the response items will go in this array
-      "page": 1, // current page
-      "results_per_page": 5, // how many items available in "content"
-      "total_results": 100 // total number of items
+      "content": [
+        {
+          "id": 1,
+          "title": "1 BR Apt in the Heart of Cap Hill",
+          "description": "Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.",
+          "created_at": "2021-04-11T21:49:02.000Z"
+        }
+      ],
+      "page": 1,
+      "results_per_page": 50,
+      "total_results": 1,
+      "links": {
+        "self": {
+          "href": "/v1/listings?page=1&limit=50&sort_by=title&order=ASC"
+        },
+        "first": {
+          "href": "/v1/listings?page=1&limit=50&sort_by=title&order=ASC"
+        },
+        "prev": {
+          "href": null
+        },
+        "last": {
+          "href": "/v1/listings?page=1&limit=50&sort_by=title&order=ASC"
+        },
+        "next": {
+          "href": null
+        }
+      }
     }
     ```
     From there, you can discern that there are 20 pages with `total_results / results_per_page` and anything else you might need for the front end.
@@ -264,6 +288,6 @@ Listings will return a list of listings page by page.
   - This endpoint is still a work in progress
   #### TODO
   - [x] Connect to Database
-  - [ ] add additinal info to JSON response, page, results_per_page and total_results
+  - [x] add additinal info to JSON response, page, results_per_page and total_results
   - [x] escape parameters before plugging into sql DB
-  - [ ] rewrite query to return total counts of listing or maybe need two querys
+  - [x] rewrite query to return total counts of listing or maybe need two querys
