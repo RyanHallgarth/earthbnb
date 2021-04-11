@@ -4,10 +4,12 @@
 
 - [Table of Contents](<##Table of Contents>)
 - [Getting Started](<##Getting Started>)
-- [api/auth](##api/auth)
+- [/api/auth](##api/auth)
   - [/login](###login)
   - [/logout](###logout)
   - [/user](###user)
+- [/v1](##/v1)
+  - [/listings](###listings)
 
 <!-- toc -->
 
@@ -28,7 +30,13 @@ Visit `http://localhost:3000/v1` (of course if you have a `PORT` environment var
 }
 ```
 
+---
+
+---
+
 ## **api/auth**
+
+---
 
 ### **login**
 
@@ -67,7 +75,7 @@ This will initiate a google login
 
   ```javascript
   axios
-    .get('/api/auth/login', userData)
+    .get('/api/auth/login')
     .then((res) => {
       console.log(res);
     })
@@ -80,6 +88,8 @@ This will initiate a google login
 - **Notes:**
 
   This needs tested. Works in browser, I'm also not 100% sure on the sample call. -ATC 4/12
+
+---
 
 ### **logout**
 
@@ -117,9 +127,9 @@ This will initiate a google logout
 
   This needs tested. Works in browser, I'm also not 100% sure on the sample call. -ATC 4/12
 
-### **user**
-
 ---
+
+### **user**
 
 Get information about the currently logged in user.
 
@@ -170,3 +180,86 @@ Get information about the currently logged in user.
   ```
 
 - **Notes:**
+
+---
+
+---
+
+## /v1
+
+---
+
+### **listings**
+
+Listings will return a list of listings page by page.
+
+- **URL**
+
+  /v1/listings?page=1&limit=10&sort_by=title&order=asc
+
+- **Method:**
+
+  `GET`
+
+- **URL Params**
+
+  **Required:**
+
+  `page=[integer]`
+
+  `limit=[integer]`
+
+  **Optional:**
+
+  Sorting allows you to order the results by any field, in ascending or descending order.
+
+  If you only need to sort one column at a time, you could put the column name in sort_by and the sort direction in order.
+
+  `sort_by=[alphanumeric]`
+
+  `order=[ASC|DESC]`
+
+  At this time we do not support multi column sorting.
+
+- **Success Response:**
+
+  If successful you will be returned an object with n listings where n is the limit. The object will also contain useful information about how many results you have, how many results there are total, and what page you're on.
+
+  - **Code:** 200 <br />
+    **Content:**
+    ```json
+    {
+      "content": [], // all the response items will go in this array
+      "page": 1, // current page
+      "results_per_page": 5, // how many items available in "content"
+      "total_results": 100 // total number of items
+    }
+    ```
+    From there, you can discern that there are 20 pages with `total_results / results_per_page` and anything else you might need for the front end.
+
+- **Error Response:**
+
+  - **Code:** 404 NOT FOUND <br />
+    **Content:** `{ error : "No results found" }`
+
+  OR
+
+  - **Code:** 422 UNPROCESSABLE ENTRY <br />
+    **Content:** `{ error : "Invalid Parameter" }`
+
+- **Sample Call:**
+
+  ```javascript
+  $.ajax({
+    url: '/v1/listings?page=1&limit=10&sort_by=title&order=asc',
+    dataType: 'json',
+    type: 'GET',
+    success: function (r) {
+      console.log(r);
+    },
+  });
+  ```
+
+- **Notes:**
+
+  <_This is where all uncertainties, commentary, discussion etc. can go. I recommend timestamping and identifying oneself when leaving comments here._>
