@@ -14,7 +14,7 @@ router.get('/user', (req, res) => {
     const loggedInUser = req.user;
     res.json(loggedInUser);
   } else {
-    res.status(404).send({ error: 'No user logged in' });
+    res.status(404).json({ error: 'No user logged in' });
   }
 });
 
