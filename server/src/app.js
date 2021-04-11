@@ -44,7 +44,7 @@ app.use(
     store: MongoStore.create({
       clientPromise: mongoosePromise,
     }),
-  }),
+  })
 );
 
 app.use(cookieParser());
@@ -58,4 +58,4 @@ app.use(passport.session());
 app.use('/v1', serverRouter);
 app.use('/api/auth', authRouter);
 
-module.exports =  app;
+module.exports = app;
