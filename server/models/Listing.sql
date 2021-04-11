@@ -1,183 +1,183 @@
 INSERT INTO listings(title,description)
-VALUES ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.')
-VALUES ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Park Life in Lower Queen Anne','')
-VALUES ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.')
-VALUES ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Park Life in Lower Queen Anne','')
-VALUES ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.')
-VALUES ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Park Life in Lower Queen Anne','')
-VALUES ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')VALUES ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.')
-VALUES ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Park Life in Lower Queen Anne','')
-VALUES ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.')
-VALUES ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Park Life in Lower Queen Anne','')
-VALUES ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.')
-VALUES ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Park Life in Lower Queen Anne','')
-VALUES ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.')
-VALUES ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Park Life in Lower Queen Anne','')
-VALUES ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.')
-VALUES ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Park Life in Lower Queen Anne','')
-VALUES ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.')
-VALUES ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Park Life in Lower Queen Anne','')
-VALUES ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.')
-VALUES ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Park Life in Lower Queen Anne','')
-VALUES ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.')
-VALUES ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Park Life in Lower Queen Anne','')
-VALUES ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.')
-VALUES ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Park Life in Lower Queen Anne','')
-VALUES ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.')
-VALUES ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Park Life in Lower Queen Anne','')
-VALUES ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
-VALUES ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
+ VALUES('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.'),
+ ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Park Life in Lower Queen Anne',''),
+ ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.'),
+ ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Park Life in Lower Queen Anne',''),
+ ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.'),
+ ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Park Life in Lower Queen Anne',''),
+ ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'), ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.'),
+ ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Park Life in Lower Queen Anne',''),
+ ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.'),
+ ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Park Life in Lower Queen Anne',''),
+ ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.'),
+ ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Park Life in Lower Queen Anne',''),
+ ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.'),
+ ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Park Life in Lower Queen Anne',''),
+ ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.'),
+ ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Park Life in Lower Queen Anne',''),
+ ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.'),
+ ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Park Life in Lower Queen Anne',''),
+ ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.'),
+ ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Park Life in Lower Queen Anne',''),
+ ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.'),
+ ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Park Life in Lower Queen Anne',''),
+ ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.'),
+ ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Park Life in Lower Queen Anne',''),
+ ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('1 BR Apt in the Heart of Cap Hill','Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.'),
+ ('Private unit in a 1920s mansion','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Bright & Airy Queen Anne Apartment','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming craftsman 3 bdm house','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Urban Charm || Downtown || Views','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Stunning 6 bd in THE BEST Location!','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Park Life in Lower Queen Anne',''),
+ ('Stunning craftsman--3 month minimum','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Charming Downtown View  Room #2','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Star Wars Room','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Dahl House in Columbia City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Peaceful Retreat in the City','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Craftsman near Lake WA / light-rail','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.'),
+ ('Spacious 3BR/3BA Craftsman','Gorgeous craftsman home near Lake Washington and easy access to light rail.   Home has wifi, large kitchen, deck space, and is in a great neighborhood. Pet friendly.')
 ;
