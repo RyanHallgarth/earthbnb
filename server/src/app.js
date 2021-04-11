@@ -13,6 +13,7 @@ const authRouter = require('./routes/auth');
 const MongoStore = require('connect-mongo');
 
 const app = express();
+//app.use('/', express.static('./public'));
 
 // CONNECT TO MONGO VIA MONGOOSE
 const mongoosePromise = mongoose
@@ -55,6 +56,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Routes
+
 app.use('/v1', serverRouter);
 app.use('/api/auth', authRouter);
 

@@ -8,9 +8,8 @@ const selectListings = async (
   order,
   callback
 ) => {
-  // TODO Create the actual connection to mysql DB
   connection.query(
-    `SELECT COUNT(*) as count FROM listings; SELECT * FROM listings ORDER BY ${connection.escape(sortBy)} ${connection.escape(order)} LIMIT ${connection.escape(limit)} OFFSET ${connection.escape(skipIndex)};`,
+    `SELECT COUNT(*) as count FROM listings; SELECT * FROM listings ORDER BY ?? ${(order)} LIMIT ${connection.escape(limit)} OFFSET ${connection.escape(skipIndex)};`, [sortBy],
     (error, results) => {
       if (error) callback({"error": error});
       else callback(results);
@@ -25,8 +24,8 @@ const paginatedResults = () => {
     const limit = parseInt(req.query.limit);
     const skipIndex = (page - 1) * limit;
     const sortBy = req.query.sort_by || 'title';
-    const order = req.query.order || 'ASC';
-    order.toUpperCase();
+    let order = req.query.order || 'ASC';
+    order = order.toUpperCase();
     const results = {};
     if(!page){
         res.status(422).json({"error": "Must include page number"});
@@ -48,20 +47,27 @@ const paginatedResults = () => {
                     else {
                         const totalResults = listings[0][0].count;
                         const lastPage = Math.ceil(totalResults / limit);
-                        let listingsObj = {
-                            content: listings[1],
-                            page: page,
-                            results_per_page: limit,
-                            total_results: totalResults,
-                            links: {},
-                        };
-                        listingsObj.links.self =  { href: `/v1/listings?page=${page}&limit=${limit}&sort_by=${sortBy}&order=${order}`};
-                        listingsObj.links.first = { href: `/v1/listings?page=1&limit=${limit}&sort_by=${sortBy}&order=${order}`};
-                        listingsObj.links.prev = (page <= 1) ? { href: null} : { href:`/v1/listings?page=${page-1}&limit=${limit}&sort_by=${sortBy}&order=${order}`};
-                        listingsObj.links.last = { href:`/v1/listings?page=${lastPage}&limit=${limit}&sort_by=${sortBy}&order=${order}`};
-                        listingsObj.links.next = (page >= lastPage) ? { href: null} : { href:`/v1/listings?page=${page+1}&limit=${limit}&sort_by=${sortBy}&order=${order}`};
-                    
-                        res.json(listingsObj);
+                        if (page > lastPage){
+                            res.status(422).json({
+                                error: `Page must be less than or equal to the last page.`, 
+                                Last_page: lastPage, 
+                                last_page_href: `/v1/listings?page=${lastPage}&limit=${limit}&sort_by=${sortBy}&order=${order}`});
+                        } else{
+                            let listingsObj = {
+                                content: listings[1],
+                                page: page,
+                                results_per_page: limit,
+                                total_results: totalResults,
+                                links: {},
+                            };
+                            listingsObj.links.self =  { href: `/v1/listings?page=${page}&limit=${limit}&sort_by=${sortBy}&order=${order}`};
+                            listingsObj.links.first = { href: `/v1/listings?page=1&limit=${limit}&sort_by=${sortBy}&order=${order}`};
+                            listingsObj.links.prev = (page <= 1) ? { href: null} : { href:`/v1/listings?page=${page-1}&limit=${limit}&sort_by=${sortBy}&order=${order}`};
+                            listingsObj.links.last = { href:`/v1/listings?page=${lastPage}&limit=${limit}&sort_by=${sortBy}&order=${order}`};
+                            listingsObj.links.next = (page >= lastPage) ? { href: null} : { href:`/v1/listings?page=${page+1}&limit=${limit}&sort_by=${sortBy}&order=${order}`};
+                        
+                            res.json(listingsObj);
+                        }
                     };
                 }
             );
