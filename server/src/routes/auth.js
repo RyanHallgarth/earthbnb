@@ -42,8 +42,5 @@ router.get(
   }
 );
 
-router.get('/user', (req, res) => {
-  res.json(req.user);
-})
 
 module.exports = router;
