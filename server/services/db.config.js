@@ -1,9 +1,11 @@
 /* eslint-disable no-console */
+require('dotenv').config();
 const mysql = require('mysql');
 
 // Database Connection for Production
 
 const connection = mysql.createConnection({
+  multipleStatements: true,
   host: process.env.DB_ADDRESS,
   user: process.env.DB_USERNAME,
   password: process.env.DB_PASSWORD,
