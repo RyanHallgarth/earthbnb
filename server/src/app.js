@@ -1,4 +1,5 @@
 require('dotenv').config();
+var cors = require('cors')
 const logger = require('morgan');
 const express = require('express');
 const cookieParser = require('cookie-parser');
@@ -30,6 +31,7 @@ const mongoosePromise = mongoose
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cors({ origin: "http://localhost:3000" }))
 
 // setup the session
 app.use(
