@@ -9,7 +9,12 @@ serverRouter.get('/', (req, res) => {
 });
 
 serverRouter.get('/listings', paginatedResults(), (req, res) => {
-  res.json(res.paginatedResults);
+  res.json({
+    "content": res.paginatedResults,
+    "page": req.query.page,
+    "results_per_page:": req.query.limit,
+    "total_results": 100  // TODO this needs to be actually calculated from the DB
+  });
 });
 
 module.exports = serverRouter;
