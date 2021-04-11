@@ -1,5 +1,18 @@
 # EarthBnB API
 
+## Table of Contents
+
+- [Table of Contents](<##Table of Contents>)
+- [Getting Started](<##Getting Started>)
+- [api/auth](##api/auth)
+  - [/login](###login)
+  - [/logout](###logout)
+  - [/user](###user)
+
+<!-- toc -->
+
+## Getting Started
+
 Server API is set up.
 
 - You can run `npm install`.
@@ -15,7 +28,9 @@ Visit `http://localhost:3000/v1` (of course if you have a `PORT` environment var
 }
 ```
 
-## **login**
+## **api/auth**
+
+### **login**
 
 This will initiate a google login
 
@@ -66,7 +81,7 @@ This will initiate a google login
 
   This needs tested. Works in browser, I'm also not 100% sure on the sample call. -ATC 4/12
 
-## **logout**
+### **logout**
 
 This will initiate a google logout
 
@@ -102,7 +117,7 @@ This will initiate a google logout
 
   This needs tested. Works in browser, I'm also not 100% sure on the sample call. -ATC 4/12
 
-## **user**
+### **user**
 
 ---
 
