@@ -43,8 +43,8 @@ passport.use(
           return cb(null, user);
         });
       });
-    },
-  ),
+    }
+  )
 );
 
 passport.serializeUser((user, cb) => {

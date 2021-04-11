@@ -7,31 +7,16 @@ const passport = require('passport');
 
 require('../../passport/passport_google');
 
-// /* GET users profile. */
-// router.get('/', (req, res) => {
-//   // If a user is logged in show their page
-//   if (req.isAuthenticated()) {
-//     const loggedInUser = req.user;
-//     Donation.find({ creator_id: req.user.providerID })
-//       .sort({ date: 'desc' })
-//       .then((donations) => {
-//         Camp.find({ creator_id: req.user.providerID })
-//           .sort({ date: 'desc' })
-//           .then((campaigns) => {
-//             res.render('users/user-profile', {
-//               displayName: loggedInUser.displayName,
-//               email: loggedInUser.email,
-//               userImage: loggedInUser.picture,
-//               donationList: donations,
-//               camplist: campaigns,
-//               isAuthenticated: req.isAuthenticated(),
-//             });
-//           });
-//       });
-//   } else {
-//     res.render('users/user-noprofile');
-//   }
-// });
+/* GET users profile. */
+router.get('/user', (req, res) => {
+  // If a user is logged in provide their information
+  if (req.isAuthenticated()) {
+    const loggedInUser = req.user;
+    res.json(loggedInUser);
+  } else {
+    res.status(404).json({ error: 'No user logged in' });
+  }
+});
 
 /* GET to Google login screen. */
 router.get(

@@ -1,5 +1,18 @@
 # EarthBnB API
 
+## Table of Contents
+
+- [Table of Contents](<##Table of Contents>)
+- [Getting Started](<##Getting Started>)
+- [api/auth](##api/auth)
+  - [/login](###login)
+  - [/logout](###logout)
+  - [/user](###user)
+
+<!-- toc -->
+
+## Getting Started
+
 Server API is set up.
 
 - You can run `npm install`.
@@ -15,7 +28,9 @@ Visit `http://localhost:3000/v1` (of course if you have a `PORT` environment var
 }
 ```
 
-## **login**
+## **api/auth**
+
+### **login**
 
 This will initiate a google login
 
@@ -66,7 +81,7 @@ This will initiate a google login
 
   This needs tested. Works in browser, I'm also not 100% sure on the sample call. -ATC 4/12
 
-## **logout**
+### **logout**
 
 This will initiate a google logout
 
@@ -101,3 +116,57 @@ This will initiate a google logout
 - **Notes:**
 
   This needs tested. Works in browser, I'm also not 100% sure on the sample call. -ATC 4/12
+
+### **user**
+
+---
+
+Get information about the currently logged in user.
+
+- **URL**
+
+  /api/auth/user
+
+- **Method:**
+
+  <_The request type_>
+
+  `GET`
+
+- **Success Response:**
+
+  On succesful authenticating a loggein in user an object from the mongoDB will be returned
+
+  - **Code:** 200 <br />
+    **Content:**
+    ```json
+    {
+      "_id":"6071f52eeefc1bd3b2030451",
+      "providerID":"104172443333147730799",
+      "provider":"google",
+      "firstName":"Adam",
+      "lastName":"Clarkson",
+      "displayName":"Adam Clarkson",
+      "email":"atclarks@iu.edu",
+      "picture":"https://lh3.googleusercontent.com/a-/AOh14GjU3gmwv-PdxvlaWYVg8voLn_MvA653EtQkjUc2=s96-c",
+      "providerProfile":{[OBJECT]},
+      "__v":0
+    }
+    ```
+
+- **Error Response:**
+
+  If no user is logged in a 404 with error message will be returned
+
+  - **Code:** 404 NOT FOUND <br />
+    **Content:** `{ error: 'No user logged in' }`
+
+- **Sample Call:**
+
+  ```javascript
+  fetch('/api/auth/user')
+    .then((response) => response.json())
+    .then((data) => console.log(data));
+  ```
+
+- **Notes:**
