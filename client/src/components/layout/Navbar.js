@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Login from "../Login";
 
 const Navbar = () => {
   return (
@@ -9,6 +10,7 @@ const Navbar = () => {
         <li>
           <Link to='/'>Home</Link>
           <Link to='/about'>About</Link>
+          <Login />
         </li>
       </ul>
     </div>
