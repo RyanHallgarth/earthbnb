@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Login from "../Login";
+import LoginBtn from "../LoginBtn";
 
 const Navbar = () => {
   return (
-    <div className='navbar'>
+    <nav className='navbar bg-primary'>
       <h1>EarthBnB</h1>
       <ul>
         <li>
@@ -13,7 +14,7 @@ const Navbar = () => {
           <Login />
         </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 
