@@ -47,16 +47,17 @@ function App() {
         <Navbar />
         <div className='container'>
           <Switch>
-            <Fragment>
-              <Search searchLocations={searchLocations} />
-              <Locations locations={currentPosts} />
-              <Pagination
-                postsPerPage={postsPerPage}
-                totalPosts={locations.length}
-                paginate={paginate}
-              />
-            </Fragment>
-
+            <Route path='/'>
+              <Fragment>
+                <Search searchLocations={searchLocations} />
+                <Locations locations={currentPosts} />
+                <Pagination
+                  postsPerPage={postsPerPage}
+                  totalPosts={locations.length}
+                  paginate={paginate}
+                />
+              </Fragment>
+            </Route>
             <Route exact path='/about' component={About} />
           </Switch>
         </div>
