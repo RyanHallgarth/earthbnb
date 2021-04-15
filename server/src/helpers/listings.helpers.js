@@ -23,7 +23,7 @@ const paginatedResults = () => {
     const page = parseInt(req.query.page);
     const limit = parseInt(req.query.limit);
     const skipIndex = (page - 1) * limit;
-    const sortBy = req.query.sort_by || 'title';
+    const sortBy = req.query.sort_by || 'name';
     let order = (req.query.order || 'ASC').toUpperCase();
 
     const results = {};
