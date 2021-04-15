@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Login from "../Login";
-import LoginBtn from "../LoginBtn";
+// import Login from "../Login";
+// import LoginBtn from "../LoginBtn";
 
 const Navbar = () => {
   return (
@@ -11,7 +11,6 @@ const Navbar = () => {
         <li>
           <Link to='/'>Home</Link>
           <Link to='/about'>About</Link>
-          <Login />
         </li>
       </ul>
     </nav>

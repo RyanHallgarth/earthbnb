@@ -6,6 +6,7 @@ import Pagination from "./components/layout/Pagination";
 import About from "./components/pages/About";
 import Search from "./components/locations/Search";
 import Locations from "./components/locations/Locations";
+import Location from "./components/locations/Location";
 import axios from "axios";
 
 function App() {
@@ -13,13 +14,6 @@ function App() {
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostsPerPage] = useState(10);
   const [payload, setPayload] = useState({});
-
-  // useEffect(() => {
-  //   console.log("yee");
-  //   axios
-  //     .get("v1/listings?page=5&limit=10&sort_by=title&order=asc")
-  //     .then((res) => setLocations(res.data.content));
-  // }, []);
 
   const searchLocations = async (text) => {
     const res = await axios.get(
@@ -47,7 +41,7 @@ function App() {
         <Navbar />
         <div className='container'>
           <Switch>
-            <Route path='/'>
+            <Route exact path='/'>
               <Fragment>
                 <Search searchLocations={searchLocations} />
                 <Locations locations={currentPosts} />
@@ -58,7 +52,13 @@ function App() {
                 />
               </Fragment>
             </Route>
+
             <Route exact path='/about' component={About} />
+            <Route
+              exact
+              path='/location/:id'
+              render={(props) => <Location {...props} />}
+            />
           </Switch>
         </div>
       </Fragment>

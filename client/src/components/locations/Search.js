@@ -14,7 +14,7 @@ const Search = ({ searchLocations }) => {
   };
   return (
     <div>
-      <form onSubmit={onSubmit} className='form'>
+      <form onSubmit={onSubmit} className='form' id='search'>
         <input
           type='text'
           name='text'
