@@ -6,6 +6,7 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const mongoose = require('mongoose');
 const { v4: uuidv4 } = require('uuid');
+const { notFound, errorHandler } = require('../middleware/error.middleware');
 
 const passport = require('passport');
 const serverRouter = require('./routes/server');
@@ -61,5 +62,8 @@ app.use(passport.session());
 
 app.use('/api/v1', serverRouter);
 app.use('/api/auth', authRouter);
+
+app.use(notFound);
+app.use(errorHandler);
 
 module.exports = app;
