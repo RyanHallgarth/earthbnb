@@ -195,7 +195,7 @@ Listings will return a list of listings page by page.
 
 - **URL**
 
-  /api/v1/listings?page=1&limit=10&sort_by=name&order=asc
+  /api/v1/listings?page=1&limit=5&sort_by=name&order=ASC&price[gte]=0&price[lte]=500&min_guests=5&min_bathrooms=2&min_bedrooms=2&min_beds=3
 
 - **Method:**
 
@@ -218,6 +218,18 @@ Listings will return a list of listings page by page.
   `sort_by=[alphanumeric]`
 
   `order=[ASC|DESC]`
+
+  `price=[number]` Not Working
+
+  `price=[number]` Not Working
+
+  `min_guests=[number]`
+
+  `min_bathrooms=[number]`
+
+  `min_bedrooms=[number]`
+
+  `min_beds=[number]`
 
   At this time we do not support multi column sorting.
 
@@ -274,14 +286,33 @@ Listings will return a list of listings page by page.
 - **Sample Call:**
 
   ```javascript
-  $.ajax({
-    url: '/api/v1/listings?page=1&limit=10&sort_by=name&order=asc',
-    dataType: 'json',
-    type: 'GET',
-    success: function (r) {
-      console.log(r);
+  var axios = require('axios').default;
+
+  var options = {
+    method: 'GET',
+    url: 'http:///api/v1/listings',
+    params: {
+      page: '1',
+      limit: '5',
+      sort_by: 'name',
+      order: 'ASC',
+      'price[gte]': '0',
+      'price[lte]': '500',
+      min_guests: '5',
+      min_bathrooms: '2',
+      min_bedrooms: '2',
+      min_beds: '3',
     },
-  });
+  };
+
+  axios
+    .request(options)
+    .then(function (response) {
+      console.log(response.data);
+    })
+    .catch(function (error) {
+      console.error(error);
+    });
   ```
 
 - **Notes:**
