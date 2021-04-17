@@ -22,7 +22,9 @@ const selectListings = async (
     
     SELECT * 
     FROM listings 
-    WHERE (accommodates >= ${accommodatesMin}
+    WHERE (price >= ${priceMin}
+    AND price <= ${priceMax}
+    AND accommodates >= ${accommodatesMin}
     AND bathrooms >= ${bathroomsMin}
     AND bedrooms >= ${bedroomsMin}
     AND beds >= ${bedsMin})
@@ -38,9 +40,6 @@ const selectListings = async (
 };
 
 // Had to remove the follow from query until prices are converted from strings
-// price >= ${priceMin}
-//     AND price <= ${priceMax}
-//     AND
 
 // Package paginated results as a JSON object
 const paginatedResults = () => {
@@ -56,7 +55,7 @@ const paginatedResults = () => {
     const sortBy = parsedQuery.sort_by || 'name';
     const order = (parsedQuery.order || 'ASC').toUpperCase();
     const priceMin = parsedQuery.price ? parsedQuery.price.gte : 0;
-    const priceMax = parsedQuery.price ? parsedQuery.price.lte : null;
+    const priceMax = parsedQuery.price ? parsedQuery.price.lte : 10000;
     const accommodatesMin = parsedQuery.min_guests || 0;
     const bathroomsMin = parsedQuery.min_bathrooms || 0;
     const bedroomsMin = parsedQuery.min_bedrooms || 0;
