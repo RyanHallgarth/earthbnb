@@ -18,7 +18,13 @@ const selectListings = async (
 ) => {
   connection.query(
     `SELECT COUNT(*) as count 
-    FROM listings; 
+    FROM listings    
+    WHERE (price >= ${priceMin}
+      AND price <= ${priceMax}
+      AND accommodates >= ${accommodatesMin}
+      AND bathrooms >= ${bathroomsMin}
+      AND bedrooms >= ${bedroomsMin}
+      AND beds >= ${bedsMin}); 
     
     SELECT * 
     FROM listings 
