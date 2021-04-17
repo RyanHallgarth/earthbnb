@@ -1,5 +1,5 @@
 require('dotenv').config();
-var cors = require('cors')
+var cors = require('cors');
 const logger = require('morgan');
 const express = require('express');
 const cookieParser = require('cookie-parser');
@@ -31,7 +31,7 @@ const mongoosePromise = mongoose
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors({ origin: "http://localhost:3000" }))
+app.use(cors({ origin: 'http://localhost:3000' }));
 
 // setup the session
 app.use(
@@ -59,7 +59,7 @@ app.use(passport.session());
 
 // Routes
 
-app.use('/v1', serverRouter);
+app.use('/api/v1', serverRouter);
 app.use('/api/auth', authRouter);
 
 module.exports = app;

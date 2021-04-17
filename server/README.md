@@ -8,7 +8,7 @@
   - [/login](###login)
   - [/logout](###logout)
   - [/user](###user)
-- [/v1](##/v1)
+- [/api/v1](##/v1)
   - [/listings](###listings)
 
 <!-- toc -->
@@ -185,7 +185,7 @@ Get information about the currently logged in user.
 
 ---
 
-## /v1
+## /api/v1
 
 ---
 
@@ -195,7 +195,7 @@ Listings will return a list of listings page by page.
 
 - **URL**
 
-  /v1/listings?page=1&limit=10&sort_by=title&order=asc
+  /api/v1/listings?page=1&limit=10&sort_by=title&order=asc
 
 - **Method:**
 
@@ -242,16 +242,16 @@ Listings will return a list of listings page by page.
       "total_results": 1,
       "links": {
         "self": {
-          "href": "/v1/listings?page=1&limit=50&sort_by=title&order=ASC"
+          "href": "/api/v1/listings?page=1&limit=50&sort_by=title&order=ASC"
         },
         "first": {
-          "href": "/v1/listings?page=1&limit=50&sort_by=title&order=ASC"
+          "href": "/api/v1/listings?page=1&limit=50&sort_by=title&order=ASC"
         },
         "prev": {
           "href": null
         },
         "last": {
-          "href": "/v1/listings?page=1&limit=50&sort_by=title&order=ASC"
+          "href": "/api/v1/listings?page=1&limit=50&sort_by=title&order=ASC"
         },
         "next": {
           "href": null
@@ -275,7 +275,7 @@ Listings will return a list of listings page by page.
 
   ```javascript
   $.ajax({
-    url: '/v1/listings?page=1&limit=10&sort_by=title&order=asc',
+    url: '/api/v1/listings?page=1&limit=10&sort_by=title&order=asc',
     dataType: 'json',
     type: 'GET',
     success: function (r) {

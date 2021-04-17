@@ -17,7 +17,7 @@ function App() {
 
   const searchLocations = async (text) => {
     const res = await axios.get(
-      "v1/listings?page=1&limit=100&sort_by=title&order=asc"
+      "v1/listings?page=1&limit=100&sort_by=name&order=asc"
     );
 
     setLocations(res.data.content);
