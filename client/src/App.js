@@ -18,7 +18,7 @@ function App() {
 
   const searchLocations = async (text) => {
     const res = await axios.get(
-      "v1/listings?page=1&limit=100&sort_by=title&order=asc"
+      "api/v1/listings?page=1&limit=100&sort_by=name&order=asc"
     );
 
     setLocations(res.data.content);
@@ -44,7 +44,7 @@ function App() {
         <Home searchLocations={searchLocations} />
         <div className='container'>
           <Switch>
-            <Route exact path='/'>
+            <Route exact path="/">
               <Fragment>
                 {/*<Search searchLocations={searchLocations} />*/}
                 <Locations locations={currentPosts} />
@@ -56,10 +56,10 @@ function App() {
               </Fragment>
             </Route>
 
-            <Route exact path='/about' component={About} />
+            <Route exact path="/about" component={About} />
             <Route
               exact
-              path='/location/:id'
+              path="/location/:id"
               render={(props) => <Location {...props} />}
             />
           </Switch>

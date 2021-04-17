@@ -1,11 +1,10 @@
 #!/usr/bin/env node
-/* eslint-disable no-alert */
 /**
  * Module dependencies.
  */
 const debug = require('debug');
 const http = require('http');
-const app = require('../app');
+const app = require('../server');
 /**
  * Normalize a port into a number, string, or false.
  */

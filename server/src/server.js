@@ -1,14 +1,16 @@
 require('dotenv').config();
-var cors = require('cors')
+var cors = require('cors');
 const logger = require('morgan');
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const mongoose = require('mongoose');
 const { v4: uuidv4 } = require('uuid');
+const { notFound, errorHandler } = require('../middleware/error.middleware');
+const welcomeMessage = require('./settings');
 
 const passport = require('passport');
-const serverRouter = require('./routes/server');
+const listingRouter = require('./routes/listing.route');
 const authRouter = require('./routes/auth');
 
 const MongoStore = require('connect-mongo');
@@ -31,7 +33,7 @@ const mongoosePromise = mongoose
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors({ origin: "http://localhost:3000" }))
+app.use(cors({ origin: 'http://localhost:3000' }));
 
 // setup the session
 app.use(
@@ -59,7 +61,13 @@ app.use(passport.session());
 
 // Routes
 
-app.use('/v1', serverRouter);
+app.use('/api/v1/listings', listingRouter);
 app.use('/api/auth', authRouter);
+app.get('/api/v1', (req, res) => {
+  res.status(200).json({ message: welcomeMessage });
+});
+
+app.use(notFound);
+app.use(errorHandler);
 
 module.exports = app;
