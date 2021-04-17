@@ -1,0 +1,58 @@
+.banner {
+  background: url("https://i.ibb.co/sVp8Zvz/house-Cliff.jpg") center
+    center/cover;
+  height: 50vh;
+  width: 100vw;
+  position: relative;
+}
+
+.banner .banner-info {
+  background-color: rgba(0, 0, 0, 0.582);
+  color: white;
+  margin-top: 275px;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-bottom: 2vw;
+  width: 300px;
+  border-radius: 0 10px 10px 0;
+}
+
+.banner .banner-info #green {
+  color: #5f9c3a;
+}
+
+.banner .banner-info > button {
+  background-color: #3e930a;
+  color: white;
+  text-transform: inherit;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.banner .banner-info > button:hover {
+  background-color: white;
+  color: #3e930a;
+}
+
+.banner .banner-info > h5 {
+  margin-top: 5px;
+}
+
+.banner .banner-search {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner .banner-searchButton {
+  background-color: #4baf0d !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  color: white !important;
+}
+
+.banner .banner-searchButton:hover {
+  background-color: white !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  color: #3e930a !important;
+}

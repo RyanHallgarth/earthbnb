@@ -1,10 +1,11 @@
 import { Fragment, useState, useEffect } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "./components/layout/Navbar";
 import Pagination from "./components/layout/Pagination";
 import About from "./components/pages/About";
-import Search from "./components/locations/Search";
+import Home from "./components/pages/Home";
+import Header from "./components/layout/Header";
+//import Search from "./components/locations/Search";
 import Locations from "./components/locations/Locations";
 import Location from "./components/locations/Location";
 import axios from "axios";
@@ -21,6 +22,7 @@ function App() {
     );
 
     setLocations(res.data.content);
+    console.log(locations);
     setPayload(res.data);
   };
 
@@ -38,12 +40,13 @@ function App() {
   return (
     <Router>
       <Fragment>
-        <Navbar />
+        <Header />
+        <Home searchLocations={searchLocations} />
         <div className='container'>
           <Switch>
             <Route exact path='/'>
               <Fragment>
-                <Search searchLocations={searchLocations} />
+                {/*<Search searchLocations={searchLocations} />*/}
                 <Locations locations={currentPosts} />
                 <Pagination
                   postsPerPage={postsPerPage}
