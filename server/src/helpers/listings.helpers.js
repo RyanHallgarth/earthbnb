@@ -45,7 +45,18 @@ const selectListings = async (
   );
 };
 
-// Had to remove the follow from query until prices are converted from strings
+// Connect to MySQL DB and get listings accoriding to the query params.
+const selectListing = async (id, callback) => {
+  connection.query(
+    `SELECT * 
+    FROM listings 
+    WHERE id = ${id};`,
+    (error, results) => {
+      if (error) callback({ error: error });
+      else callback(results);
+    }
+  );
+};
 
 // Package paginated results as a JSON object
 const paginatedResults = () => {
@@ -147,4 +158,5 @@ const paginatedResults = () => {
   };
 };
 
+exports.selectListing = selectListing;
 exports.paginatedResults = paginatedResults;
