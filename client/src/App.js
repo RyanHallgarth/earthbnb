@@ -14,10 +14,14 @@ function App() {
   const [postsPerPage, setPostsPerPage] = useState(10);
 
   const searchLocations = async (text) => {
-    const res = await axios.get("/api/v1/listings?page=1&limit=5");
+    const res = await axios
+      .get("local/api/v1/listings?page=1&limit=5")
+      .catch(function (error) {
+        console.error(error);
+      });
 
-    setLocations(res.data.content);
-    console.log(locations);
+    //setLocations(res.data.content);
+    console.log(res);
   };
 
   //Get number of locations
