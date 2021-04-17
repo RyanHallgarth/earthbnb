@@ -195,7 +195,7 @@ Listings will return a list of listings page by page.
 
 - **URL**
 
-  /api/v1/listings?page=1&limit=10&sort_by=title&order=asc
+  /api/v1/listings?page=1&limit=10&sort_by=name&order=asc
 
 - **Method:**
 
@@ -232,7 +232,7 @@ Listings will return a list of listings page by page.
       "content": [
         {
           "id": 1,
-          "title": "1 BR Apt in the Heart of Cap Hill",
+          "name": "1 BR Apt in the Heart of Cap Hill",
           "description": "Your very own room and bath to use at night while you explore the city by day. Shared common area with fully equipped kitchen, tv and stereo.",
           "created_at": "2021-04-11T21:49:02.000Z"
         }
@@ -242,16 +242,16 @@ Listings will return a list of listings page by page.
       "total_results": 1,
       "links": {
         "self": {
-          "href": "/api/v1/listings?page=1&limit=50&sort_by=title&order=ASC"
+          "href": "/api/v1/listings?page=1&limit=50&sort_by=name&order=ASC"
         },
         "first": {
-          "href": "/api/v1/listings?page=1&limit=50&sort_by=title&order=ASC"
+          "href": "/api/v1/listings?page=1&limit=50&sort_by=name&order=ASC"
         },
         "prev": {
           "href": null
         },
         "last": {
-          "href": "/api/v1/listings?page=1&limit=50&sort_by=title&order=ASC"
+          "href": "/api/v1/listings?page=1&limit=50&sort_by=name&order=ASC"
         },
         "next": {
           "href": null
@@ -275,7 +275,7 @@ Listings will return a list of listings page by page.
 
   ```javascript
   $.ajax({
-    url: '/api/v1/listings?page=1&limit=10&sort_by=title&order=asc',
+    url: '/api/v1/listings?page=1&limit=10&sort_by=name&order=asc',
     dataType: 'json',
     type: 'GET',
     success: function (r) {
@@ -286,8 +286,3 @@ Listings will return a list of listings page by page.
 
 - **Notes:**
   - This endpoint is still a work in progress
-  #### TODO
-  - [x] Connect to Database
-  - [x] add additinal info to JSON response, page, results_per_page and total_results
-  - [x] escape parameters before plugging into sql DB
-  - [x] rewrite query to return total counts of listing or maybe need two querys
