@@ -2,14 +2,12 @@ const express = require('express');
 const welcomeMessage = require('../settings');
 const { paginatedResults } = require('../helpers/listings.helpers');
 
-const serverRouter = express.Router();
+const listingRouter = express.Router();
 
-serverRouter.get('/', (req, res) => {
+listingRouter.get('/', (req, res) => {
   res.status(200).json({ message: welcomeMessage });
 });
 
-serverRouter.get('/listings', paginatedResults(), (req, res) => {
-  
-});
+listingRouter.get('/listings', paginatedResults(), (req, res) => {});
 
-module.exports = serverRouter;
+module.exports = listingRouter;

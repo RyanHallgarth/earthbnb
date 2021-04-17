@@ -9,7 +9,7 @@ const { v4: uuidv4 } = require('uuid');
 const { notFound, errorHandler } = require('../middleware/error.middleware');
 
 const passport = require('passport');
-const serverRouter = require('./routes/server');
+const listingRouter = require('./routes/listing.route');
 const authRouter = require('./routes/auth');
 
 const MongoStore = require('connect-mongo');
@@ -60,7 +60,7 @@ app.use(passport.session());
 
 // Routes
 
-app.use('/api/v1', serverRouter);
+app.use('/api/v1', listingRouter);
 app.use('/api/auth', authRouter);
 
 app.use(notFound);
