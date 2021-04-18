@@ -30,8 +30,10 @@ const LocationItem = ({
         </div>
         <div className='info-bottom'>
           <div className='stars'>
-            <StarIcon className='star' />
-            <strong>{review_scores_rating}</strong>
+            <h2>
+              <StarIcon className='star' />
+              <strong className='strong'>{review_scores_rating}</strong>
+            </h2>
           </div>
 
           <Button
@@ -40,10 +42,13 @@ const LocationItem = ({
             variant='outlined'
             className='more-btn'
           >
-            More
+            More Details
           </Button>
           <div className='price'>
             <h2>${price}</h2>
+            <p>
+              <em>per night</em>
+            </p>
           </div>
         </div>
       </div>

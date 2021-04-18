@@ -4,7 +4,6 @@
   margin: 20px;
   padding: 20px;
   border-bottom: 1px solid lightgray;
-  flex-wrap: wrap;
 }
 
 .search-result > img {
@@ -23,7 +22,7 @@
 }
 
 .search-result .info .info-top {
-  width: 60vw;
+  width: 70vw;
 }
 
 .search-result .heart {
@@ -33,7 +32,7 @@
 }
 
 .search-result .info .info-top > h3 {
-  font-weight: 300;
+  font-weight: 500;
   margin-top: 10px;
 }
 
@@ -59,16 +58,22 @@
 }
 
 .search-result .info .more-btn {
+  background-color: white;
+  color: #3e930a;
+}
+
+.search-result .info .more-btn:hover {
   background-color: #3e930a;
   color: white;
 }
 
 .search-result .info .info-bottom .stars {
-  display: block;
+  display: flex;
 }
 
 .search-result .info .info-bottom .stars .star {
   color: rgb(236, 212, 0);
+  margin-right: 4px;
 }
 
 .search-result .info .info-bottom .price > p {
@@ -76,4 +81,15 @@
 }
 
 .search-result .info .info-bottom .price {
+}
+
+@media only screen and (max-width: 885px) {
+  .search-result {
+    display: flex;
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+    flex-wrap: wrap;
+  }
 }
