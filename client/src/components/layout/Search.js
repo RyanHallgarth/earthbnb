@@ -1,7 +1,9 @@
 import { React, useState } from "react";
+import { useHistory } from "react-router-dom";
 import "../../Search.css";
 
 const Search = ({ searchLocations }) => {
+  const history = useHistory();
   const [text, setText] = useState("");
 
   const onChange = (e) => {
@@ -12,6 +14,7 @@ const Search = ({ searchLocations }) => {
     e.preventDefault();
     searchLocations(text);
     setText("");
+    history.push("/search", { from: "Home" });
   };
   return (
     <div className='search'>

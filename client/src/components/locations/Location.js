@@ -1,7 +1,26 @@
-import React from "react";
+import { React, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const Location = ({ match }) => {
+const Location = ({ location, match, getLocation }) => {
+  useEffect(() => {
+    getLocation(match.params.id);
+  }, []);
+
+  const {
+    name,
+    summary,
+    medium_url,
+    street,
+    city,
+    state,
+    room_type,
+    accomodates,
+    bathrooms,
+    bedrooms,
+    amenities,
+    review_scores_rating,
+  } = location;
+
   return (
     <div>
       <Link to='/' className='btn btn-light'>

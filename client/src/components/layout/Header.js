@@ -13,11 +13,6 @@ const Header = () => {
         alt=''
       />
 
-      <div className='header-center'>
-        <input type='text' />
-        <SearchIcon />
-      </div>
-
       <div className='header-right'>
         <Login />
         <Avatar style={{ marginLeft: "10px" }} />

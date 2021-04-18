@@ -10,12 +10,12 @@ const Home = ({ searchLocations }) => {
 
       <div className='home-section'>
         <Card
-          src='https://a0.muscache.com/im/pictures/eb9c7c6a-ee33-414a-b1ba-14e8860d59b3.jpg?im_w=720'
-          title='Online Experiences'
-          description='Unique activities we can do together, led by a world of hosts.'
+          src='https://images.unsplash.com/photo-1561753757-d8880c5a3551?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80'
+          title='Highest Rated'
+          description='Discover the highest quality locations available.'
         />
         <Card
-          src='https://a0.muscache.com/im/pictures/15159c9c-9cf1-400e-b809-4e13f286fa38.jpg?im_w=720'
+          src='https://images.unsplash.com/photo-1537726235470-8504e3beef77?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=720&q=80'
           title='Unique stays'
           description='Spaces that are more than just a place to sleep.'
         />
