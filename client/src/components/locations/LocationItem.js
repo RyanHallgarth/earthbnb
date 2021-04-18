@@ -9,7 +9,7 @@ const LocationItem = ({
   location: {
     id,
     name,
-    notes,
+    summary,
     thumbnail_url,
     price,
     street,
@@ -25,7 +25,7 @@ const LocationItem = ({
           <p>{street}</p>
           <h3>{name}</h3>
           <p>____</p>
-          <p>{notes}</p>
+          <p>{summary}</p>
         </div>
         <div className='info-bottom'>
           <div className='stars'>
