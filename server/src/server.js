@@ -10,6 +10,7 @@ const { notFound, errorHandler } = require('../middleware/error.middleware');
 
 const passport = require('passport');
 const listingRouter = require('./routes/listing.route');
+const favoriteRouter = require('./routes/favorite.route');
 const authRouter = require('./routes/auth');
 
 const MongoStore = require('connect-mongo');
@@ -63,6 +64,7 @@ app.use(passport.session());
 // Routes
 
 app.use('/api/v1/listings', listingRouter);
+app.use('/api/v1/favorite', favoriteRouter);
 app.use('/api/auth', authRouter);
 app.get('/api/v1', (req, res) => {
   res.status(200).json({ message: 'WELCOME TO V1 API' });

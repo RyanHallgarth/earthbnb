@@ -25,6 +25,9 @@ const UserSchema = new Schema({
   picture: {
     type: String,
   },
+  favorites: {
+    type: [Number],
+  },
   providerProfile: {
     type: {},
   },
