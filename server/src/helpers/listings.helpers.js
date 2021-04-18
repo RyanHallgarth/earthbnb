@@ -158,5 +158,19 @@ const paginatedResults = () => {
   };
 };
 
+const selectTopListings = async (numListings, callback) => {
+  connection.query(
+    `SELECT * 
+    FROM listings 
+    ORDER BY review_scores_rating DESC, number_of_reviews DESC
+    LIMIT ${numListings};`,
+    (error, results) => {
+      if (error) callback({ error: error });
+      else callback(results);
+    }
+  );
+};
+
 exports.selectListing = selectListing;
 exports.paginatedResults = paginatedResults;
+exports.selectTopListings = selectTopListings;
