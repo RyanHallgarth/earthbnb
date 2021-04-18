@@ -10,6 +10,8 @@
   - [/user](###user)
 - [/api/v1](##/v1)
   - [/listings](###listings)
+  - [/listings/listing/:id](###listings/listing/:id)
+  - [/listings/toprated](###listings/toprated)
 
 <!-- toc -->
 
@@ -320,13 +322,13 @@ Listings will return a list of listings page by page.
 
 ---
 
-### **listings/:id**
+### **listings/listing/:id**
 
 Returns a single listing based on id
 
 - **URL**
 
-  /api/v1/listings/:id
+  /api/v1/listings/listing/:id
 
 - **Method:**
 
@@ -340,7 +342,7 @@ Returns a single listing based on id
 
 - **Success Response:**
 
-  An object wiht a single listing is returned
+  An object with a single listing is returned
 
   - **Code:** 200 <br />
     **Content:**
@@ -465,3 +467,133 @@ Returns a single listing based on id
   ```
 
 - **Notes:**
+
+---
+
+### **listings/toprated**
+
+A [limit] number of top rated listings will be returned.
+
+- **URL**
+
+  /api/v1/listings/toprated?limit=10
+
+- **Method:**
+
+  `GET`
+
+- **URL Params**
+
+  **Optional:**
+
+  `limit=[number]` **DEFAULT:** 10
+
+- **Success Response:**
+
+  If successful you will be returned an object with n listings where n is the limit.
+
+  - **Code:** 200 <br />
+    **Content:**
+    ```json
+    [
+      {
+        "id": 706385,
+          "name": "Lake Union view \"Sky Cabin\" apt.",
+          "summary":.....
+      }.....
+    ]
+    ```
+
+- **Error Response:**
+
+  - **Code:** 404 NOT FOUND <br />
+    **Content:** `{ error : "No results found" }`
+
+  OR
+
+  - **Code:** 422 UNPROCESSABLE ENTRY <br />
+    **Content:** `{ error : "Invalid Parameter" }`
+
+- **Sample Call:**
+
+  ```javascript
+  var axios = require('axios');
+
+  var config = {
+    method: 'get',
+    url: 'http://localhost:8080/api/v1/listings/toprated?limit=5',
+    headers: {},
+  };
+
+  axios(config)
+    .then(function (response) {
+      console.log(JSON.stringify(response.data));
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  ```
+
+### **listings/uniquestays**
+
+A [limit] number of unique stays listings will be returned. Returns top rate that are not any of the following: 'Apartment', 'House', 'Condominium', 'Cabin', 'Bed & Breakfast', 'Loft', 'Townhouse', 'Other'
+
+- **URL**
+
+  /api/v1/listings/uniquestays?limit=10
+
+- **Method:**
+
+  `GET`
+
+- **URL Params**
+
+  **Optional:**
+
+  `limit=[number]` **DEFAULT:** 10
+
+- **Success Response:**
+
+  If successful you will be returned an object with n listings where n is the limit.
+
+  - **Code:** 200 <br />
+    **Content:**
+    ```json
+    [
+      {
+        "id": 706385,
+          "name": "Lake Union view \"Sky Cabin\" apt.",
+          "summary":.....
+      }.....
+    ]
+    ```
+
+- **Error Response:**
+
+  - **Code:** 404 NOT FOUND <br />
+    **Content:** `{ error : "No results found" }`
+
+  OR
+
+  - **Code:** 422 UNPROCESSABLE ENTRY <br />
+    **Content:** `{ error : "Invalid Parameter" }`
+
+- **Sample Call:**
+
+  ```javascript
+  var axios = require('axios');
+
+  var config = {
+    method: 'get',
+    url: 'http://localhost:8080/api/v1/listings/uniquestays?limit=5',
+    headers: {},
+  };
+
+  axios(config)
+    .then(function (response) {
+      console.log(JSON.stringify(response.data));
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  ```

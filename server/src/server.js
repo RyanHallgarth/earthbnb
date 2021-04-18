@@ -7,7 +7,6 @@ const session = require('express-session');
 const mongoose = require('mongoose');
 const { v4: uuidv4 } = require('uuid');
 const { notFound, errorHandler } = require('../middleware/error.middleware');
-const welcomeMessage = require('./settings');
 
 const passport = require('passport');
 const listingRouter = require('./routes/listing.route');
@@ -64,7 +63,7 @@ app.use(passport.session());
 app.use('/api/v1/listings', listingRouter);
 app.use('/api/auth', authRouter);
 app.get('/api/v1', (req, res) => {
-  res.status(200).json({ message: welcomeMessage });
+  res.status(200).json({ message: 'WELCOME TO V1 API' });
 });
 
 app.use(notFound);
