@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import StarIcon from "@material-ui/icons/Star";
+import { Button } from "@material-ui/core";
 import "../../LocationItem.css";
 
 const LocationItem = ({
@@ -30,20 +31,22 @@ const LocationItem = ({
         <div className='info-bottom'>
           <div className='stars'>
             <StarIcon className='star' />
-            <p>
-              <strong>{review_scores_rating}</strong>
-            </p>
+            <strong>{review_scores_rating}</strong>
           </div>
+
+          <Button
+            to={`/location/${id}`}
+            component={Link}
+            variant='outlined'
+            className='more-btn'
+          >
+            More
+          </Button>
           <div className='price'>
             <h2>${price}</h2>
           </div>
         </div>
       </div>
-      {/* <div>
-        <Link to={`/location/${id}`} className='btn btn-dark btn-sm my-1'>
-          More
-        </Link>
-      </div> */}
     </div>
   );
 };
