@@ -15,7 +15,9 @@ const authRouter = require('./routes/auth');
 const MongoStore = require('connect-mongo');
 
 const app = express();
-//app.use('/', express.static('./public'));
+if (process.env.NODE_ENV === 'production') {
+  app.use('/', express.static('public'));
+}
 
 // CONNECT TO MONGO VIA MONGOOSE
 const mongoosePromise = mongoose
@@ -32,7 +34,7 @@ const mongoosePromise = mongoose
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors({ origin: 'http://localhost:3000' }));
+//app.use(cors({ origin: 'http://localhost:3000' }));
 
 // setup the session
 app.use(
