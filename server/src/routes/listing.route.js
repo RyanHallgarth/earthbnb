@@ -3,6 +3,7 @@ const {
   paginatedResults,
   selectListing,
   selectTopListings,
+  selectUniqueListings,
 } = require('../helpers/listings.helpers');
 
 const listingRouter = express.Router();
@@ -18,6 +19,13 @@ listingRouter.get('/listing/:id', async (req, res) => {
 listingRouter.get('/toprated', async (req, res) => {
   const limit = req.query.limit || 10;
   const topListings = await selectTopListings(limit, (listings) => {
+    res.json(listings);
+  });
+});
+
+listingRouter.get('/uniquestays', async (req, res) => {
+  const limit = req.query.limit || 10;
+  const uniqueListings = await selectUniqueListings(limit, (listings) => {
     res.json(listings);
   });
 });
