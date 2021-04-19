@@ -4,6 +4,7 @@ const {
   selectListing,
   selectTopListings,
   selectUniqueListings,
+  selectEntirePlaceListings,
 } = require('../helpers/listings.helpers');
 
 const listingRouter = express.Router();
@@ -28,6 +29,18 @@ listingRouter.get('/uniquestays', async (req, res) => {
   const uniqueListings = await selectUniqueListings(limit, (listings) => {
     res.json(listings);
   });
+});
+
+listingRouter.get('/entireplace', async (req, res) => {
+  const limit = req.query.limit || 10;
+  const accomodates = req.query.accomodates || 5;
+  const uniqueListings = await selectEntirePlaceListings(
+    limit,
+    accomodates,
+    (listings) => {
+      res.json(listings);
+    }
+  );
 });
 
 module.exports = listingRouter;

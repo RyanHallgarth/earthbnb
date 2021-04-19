@@ -597,3 +597,69 @@ A [limit] number of unique stays listings will be returned. Returns top rate tha
       console.log(error);
     });
   ```
+
+### **listings/entireplace**
+
+A [limit] number of unique stays listings will be returned. Returns top rate that are not any of the following: 'Apartment', 'House', 'Condominium', 'Cabin', 'Bed & Breakfast', 'Loft', 'Townhouse', 'Other'
+
+- **URL**
+
+  http://localhost:8080/api/v1/listings/entireplace?limit=10&accomodates=10
+
+- **Method:**
+
+  `GET`
+
+- **URL Params**
+
+  **Optional:**
+
+  `limit=[number]` **DEFAULT:** 10
+  `accomodates=[number]` **DEFAULT:** 10
+
+- **Success Response:**
+
+  If successful you will be returned an object with n listings where n is the limit.
+
+  - **Code:** 200 <br />
+    **Content:**
+    ```json
+    [
+      {
+        "id": 706385,
+          "name": "Lake Union view \"Sky Cabin\" apt.",
+          "summary":.....
+      }.....
+    ]
+    ```
+
+- **Error Response:**
+
+  - **Code:** 404 NOT FOUND <br />
+    **Content:** `{ error : "No results found" }`
+
+  OR
+
+  - **Code:** 422 UNPROCESSABLE ENTRY <br />
+    **Content:** `{ error : "Invalid Parameter" }`
+
+- **Sample Call:**
+
+  ```javascript
+  var axios = require('axios');
+
+  var config = {
+    method: 'get',
+    url:
+      'http://localhost:8080/api/v1/listings/entireplace?limit=10&accomodates=10',
+    headers: {},
+  };
+
+  axios(config)
+    .then(function (response) {
+      console.log(JSON.stringify(response.data));
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  ```
