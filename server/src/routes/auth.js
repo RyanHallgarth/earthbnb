@@ -2,6 +2,14 @@ require('dotenv').config();
 
 const express = require('express');
 
+var cors = require('cors');
+
+var corsOptions = {
+  origin: 'https://accounts.google.com',
+  credentials: true,
+  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+
 const router = express.Router();
 const passport = require('passport');
 
@@ -14,6 +22,7 @@ router.get('/user', (req, res) => {
     const loggedInUser = req.user;
     res.json(loggedInUser);
   } else {
+    console.log(req.isAuthenticated());
     res.status(404).json({ error: 'No user logged in' });
   }
 });
@@ -41,6 +50,5 @@ router.get(
     res.json(req.user);
   }
 );
-
 
 module.exports = router;

@@ -25,19 +25,19 @@ function App() {
   return (
     <Router>
       <Header />
-
+      <a href="/api/auth/login">test</a>
       <Switch>
-        <Route exact path='/'>
+        <Route exact path="/">
           <Home searchLocations={searchLocations} />
         </Route>
 
-        <Route exact path='/search'>
+        <Route exact path="/search">
           <SearchPage locations={locations} />
         </Route>
 
         <Route
           exact
-          path='/location/:id'
+          path="/location/:id"
           render={(props) => (
             <Location
               location={location}
