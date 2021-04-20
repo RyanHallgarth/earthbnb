@@ -9,7 +9,7 @@
 .search-result > img {
   object-fit: cover;
   height: 200px;
-  width: 300px;
+  min-width: 200px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -22,7 +22,7 @@
 }
 
 .search-result .info .info-top {
-  width: 70vw;
+  width: 80vw;
 }
 
 .search-result .heart {
@@ -38,6 +38,7 @@
 
 .search-result .info .info-top > p {
   margin-top: 10px;
+  margin-right: 20px;
   font-size: 13px;
   color: gray;
 }
@@ -83,13 +84,21 @@
 .search-result .info .info-bottom .price {
 }
 
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 600px) {
   .search-result {
     display: flex;
-    position: relative;
     margin: 20px;
     padding: 20px;
     border-bottom: 1px solid lightgray;
     flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .search-result > img {
+    object-fit: cover;
+    height: 200px;
+    min-width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
   }
 }

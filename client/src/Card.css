@@ -1,4 +1,4 @@
-.card {
+.spotlight {
   margin: 10px;
   border-radius: 10px;
   overflow: hidden;
@@ -7,18 +7,18 @@
   cursor: pointer;
 }
 
-.card:hover {
+.spotlight:hover {
   transform: scale(1.07);
 }
 
-.card > img {
+.spotlight > img {
   object-fit: fill;
   min-width: 300px;
   min-height: 200px;
   width: 100%;
 }
 
-.card .card-info {
+.spotlight .spotlight-info {
   margin-top: -9px;
   border-radius: 10px;
   padding: 20px;
@@ -26,12 +26,12 @@
   border: 1;
 }
 
-.card .card-info > h2 {
+.spotlight .card-info > h2 {
   font-size: 18px;
   font-weight: 600;
 }
 
-.card .card-info > h4 {
+.spotlight .card-info > h4 {
   font-size: 14px;
   font-weight: 400;
   margin-top: 8px;

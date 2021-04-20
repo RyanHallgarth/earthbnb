@@ -26,11 +26,7 @@ const Search = ({ searchLocations }) => {
           value={text}
           onChange={onChange}
         />
-        <input
-          type='submit'
-          value='Search'
-          className='btn btn-dark btn-block'
-        />
+        <input type='submit' value='Search' />
       </form>
     </div>
   );

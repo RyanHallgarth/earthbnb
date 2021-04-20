@@ -10,6 +10,7 @@ import axios from "axios";
 function App() {
   const [locations, setLocations] = useState([]);
   const [location, setLocation] = useState([]);
+
   const searchLocations = async (text) => {
     const res = await axios.get("api/v1/listings?page=1&limit=10");
 
@@ -18,7 +19,7 @@ function App() {
   };
 
   const getLocation = async (id) => {
-    const res = await axios.get(`/api/v1/listings/${id}`);
+    const res = await axios.get(`/api/v1/listings/listing/${id}`);
     setLocation(res.data[0]);
   };
 
@@ -40,9 +41,9 @@ function App() {
           path='/location/:id'
           render={(props) => (
             <Location
+              {...props}
               location={location}
               getLocation={getLocation}
-              {...props}
             />
           )}
         />
