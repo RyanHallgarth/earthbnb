@@ -38,9 +38,8 @@ router.get(
   '/return',
   passport.authenticate('google', { failureRedirect: '/users/login' }),
   (req, res) => {
-    res.json(req.user);
+    res.redirect('/');
   }
 );
-
 
 module.exports = router;
