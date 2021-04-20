@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "prestart": "babel ./src --out-dir build",
-    "start": "node ./build/bin/www",
+    "start": "node ./src/bin/www",
     "dev": "nodemon ./src/bin/www",
     "lint": "./node_modules/.bin/eslint ./src",
     "pretty": "prettier --write '**/*.{js,json}' '!node_modules/**'",

@@ -17,7 +17,7 @@ const MongoStore = require('connect-mongo');
 
 const app = express();
 if (process.env.NODE_ENV === 'production') {
-  app.use('/', express.static('public'));
+  app.use('/', express.static('build'));
 }
 
 // CONNECT TO MONGO VIA MONGOOSE
