@@ -16,9 +16,8 @@ const authRouter = require('./routes/auth');
 const MongoStore = require('connect-mongo');
 
 const app = express();
-if (process.env.NODE_ENV === 'production') {
-  app.use('/', express.static('build'));
-}
+
+app.use('/', express.static('public'));
 
 // CONNECT TO MONGO VIA MONGOOSE
 const mongoosePromise = mongoose
