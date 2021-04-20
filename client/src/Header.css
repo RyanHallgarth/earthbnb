@@ -7,24 +7,13 @@
   z-index: 100;
   width: 100%;
   top: 0;
+  border-bottom: 1px solid lightgray;
 }
 
 .header .header-icon {
   object-fit: contain;
   height: 90px;
   margin-left: 10px;
-  min-width: 80px;
-}
-
-.header .header-center {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  max-width: fit-content;
-  padding: 10px;
-  height: 30px;
-  border: 1px solid lightgray;
-  border-radius: 999px;
 }
 
 .header .header-center > input {
@@ -37,6 +26,4 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 10vw;
-  margin-right: 80px;
 }

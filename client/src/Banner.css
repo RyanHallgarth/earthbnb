@@ -3,17 +3,17 @@
     center/cover;
   height: 50vh;
   width: 100vw;
-  position: relative;
+  overflow: hidden;
 }
 
 .banner .banner-info {
   background-color: rgba(0, 0, 0, 0.582);
   color: white;
-  margin-top: 275px;
+  margin-top: 200px;
   padding-left: 3vw;
   padding-right: 3vw;
   padding-bottom: 2vw;
-  width: 300px;
+  width: 350px;
   border-radius: 0 10px 10px 0;
 }
 
