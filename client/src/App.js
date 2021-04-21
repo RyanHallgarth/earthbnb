@@ -6,6 +6,7 @@ import Header from "./components/layout/Header";
 import Location from "./components/locations/Location";
 import SearchPage from "./components/pages/SearchPage";
 import axios from "axios";
+import Map from "./components/Map";
 
 function App() {
   const [locations, setLocations] = useState([]);

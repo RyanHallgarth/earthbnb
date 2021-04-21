@@ -10,6 +10,7 @@ import BathtubIcon from "@material-ui/icons/Bathtub";
 import PeopleAltIcon from "@material-ui/icons/PeopleAlt";
 import BookIcon from "@material-ui/icons/Book";
 import "../../Location.css";
+import Map from "../Map";
 
 const Location = ({ location, match, getLocation }) => {
   useEffect(() => {
@@ -38,65 +39,72 @@ const Location = ({ location, match, getLocation }) => {
     property_type,
     instrueantrue_bookable,
     notes,
+    latitude,
+    longitude,
   } = location;
 
   return (
-    <div>
+    <div className='card'>
       <Link to='/search' className='btn btn-light'>
         Back to Search
       </Link>
-      <div className='title'>
-        <h1>{name}</h1>
-      </div>
+      <div className='card grid-1'>
+        <div className='title'>
+          <h1>{name}</h1>
+        </div>
 
-      <div className='flex-container'>
-        <div className='icon-text'>
-          Availability:{" "}
-          {has_availabilitruey ? (
-            <CheckCircleOutlineIcon
-              className='icon'
-              style={{ color: "green", fontSize: "20px" }}
-            />
-          ) : (
-            <HighlightOffIcon className='icon' style={{ color: "red" }} />
-          )}
-        </div>
-        <div className='icon-text'>
-          Superhost:{" "}
-          {hostrue_is_superhostrue ? (
-            <CheckCircleOutlineIcon
-              className='icon'
-              style={{ color: "green", fontSize: "20px" }}
-            />
-          ) : (
-            <HighlightOffIcon className='icon' style={{ color: "red" }} />
-          )}
-        </div>
-        <div className='icon-text'>
-          Instant Booking:
-          {instrueantrue_bookable ? (
-            <CheckCircleOutlineIcon
-              className='icon'
-              style={{ color: "green", fontSize: "20px" }}
-            />
-          ) : (
-            <HighlightOffIcon className='icon' style={{ color: "red" }} />
-          )}
+        <div className='flex-container '>
+          <div className='icon-text'>
+            Availability:
+            {has_availabilitruey ? (
+              <CheckCircleOutlineIcon
+                className='icon'
+                style={{ color: "green", fontSize: "20px" }}
+              />
+            ) : (
+              <HighlightOffIcon className='icon' style={{ color: "red" }} />
+            )}
+          </div>
+          <div className='icon-text'>
+            Superhost:
+            {hostrue_is_superhostrue ? (
+              <CheckCircleOutlineIcon
+                className='icon'
+                style={{ color: "green", fontSize: "20px" }}
+              />
+            ) : (
+              <HighlightOffIcon className='icon' style={{ color: "red" }} />
+            )}
+          </div>
+          <div className='icon-text'>
+            Instant Booking:
+            {instrueantrue_bookable ? (
+              <CheckCircleOutlineIcon
+                className='icon'
+                style={{ color: "green", fontSize: "20px" }}
+              />
+            ) : (
+              <HighlightOffIcon className='icon' style={{ color: "red" }} />
+            )}
+          </div>
         </div>
       </div>
       <div className='card grid-2'>
-        <div className='all-center'>
-          <img src={picture_url} alt='' />
-        </div>
-        <div className='top-deets all-center'>
-          <h2>
-            {property_type} hosted by {host_name}
-          </h2>
-          <h4 class='address'>{street}</h4>
+        <img src={picture_url} alt='' />
 
+        <Map lat={latitude} lng={longitude} />
+      </div>
+      <div style={{ textAlign: "center" }}>
+        <h2>
+          {property_type} hosted by {host_name}
+        </h2>
+        <h4 className='address'>{street}</h4>
+      </div>
+      <div className='card grid-2'>
+        <div className='top-deets'>
           <div className='icon-list'>
             <ul>
-              <li class='flex-container'>
+              <li className='flex-container'>
                 <span>
                   <HouseIcon
                     style={{
@@ -108,8 +116,8 @@ const Location = ({ location, match, getLocation }) => {
                 </span>
                 {room_type}
               </li>
-              <p class='note'>You'll have the {room_type} to yourself</p>
-              <li class='flex-container'>
+              <p className='note'>You'll have the {room_type} to yourself</p>
+              <li className='flex-container'>
                 {" "}
                 <span>
                   <PeopleAltIcon
@@ -122,58 +130,55 @@ const Location = ({ location, match, getLocation }) => {
                 </span>
                 Accommodates {accommodates}
               </li>
-              <p class='note'>
+              <p className='note'>
                 Enjoy up to {accommodates - 1} guest(s) during your stay
               </p>
-
-              <li class='flex-container'>
-                {" "}
-                <span>
-                  <MeetingRoomIcon
-                    style={{
-                      marginRight: "15px",
-                      fontSize: "30px",
-                      color: "#474747",
-                    }}
-                  />
-                </span>
-                {bedrooms} Bedroom(s)
-              </li>
-              <li class='flex-container'>
-                {" "}
-                <span>
-                  <HotelIcon
-                    style={{
-                      marginRight: "15px",
-                      fontSize: "30px",
-                      color: "#474747",
-                    }}
-                  />
-                </span>
-                {beds} Bed(s)
-              </li>
-              <li class='flex-container'>
-                {" "}
-                <span>
-                  <BathtubIcon
-                    style={{
-                      marginRight: "15px",
-                      fontSize: "30px",
-                      color: "#474747",
-                    }}
-                  />
-                </span>
-                {bathrooms} Bathroom(s)
-              </li>
             </ul>
           </div>
         </div>
-      </div>
-
-      <div className='card grid-1 description'>
-        <h2>Notes</h2>
-
-        {notes}
+        <div className='top-deets'>
+          <ul>
+            <li class='flex-container'>
+              {" "}
+              <span>
+                <MeetingRoomIcon
+                  style={{
+                    marginRight: "15px",
+                    fontSize: "30px",
+                    color: "#474747",
+                  }}
+                />
+              </span>
+              {bedrooms} Bedroom(s)
+            </li>
+            <li class='flex-container'>
+              {" "}
+              <span>
+                <HotelIcon
+                  style={{
+                    marginRight: "15px",
+                    fontSize: "30px",
+                    color: "#474747",
+                  }}
+                />
+              </span>
+              {beds} Bed(s)
+            </li>
+            <li class='flex-container'>
+              {" "}
+              <span>
+                <BathtubIcon
+                  style={{
+                    marginRight: "15px",
+                    fontSize: "30px",
+                    color: "#474747",
+                  }}
+                />
+              </span>
+              {bathrooms} Bathroom(s)
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

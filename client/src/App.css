@@ -23,6 +23,11 @@ body {
   color: #333;
 }
 
+.location-marker {
+  font-size: 2rem;
+  color: maroon;
+}
+
 a {
   color: var(--primary-color);
   text-decoration: none;
