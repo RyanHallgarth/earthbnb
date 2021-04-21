@@ -4,7 +4,7 @@
   align-items: center;
   position: sticky;
   background-color: white;
-  z-index: 100;
+  z-index: 2;
   width: 100%;
   top: 0;
   border-bottom: 1px solid lightgray;
@@ -13,14 +13,12 @@
 .header .header-icon {
   object-fit: contain;
   height: 90px;
-  margin-left: 10px;
 }
 
-.header .header-center > input {
+/* .header .header-center > input {
   border: none;
-  padding: 10px;
   outline-width: 0;
-}
+} */
 
 .header .header-right {
   display: flex;
