@@ -79,6 +79,10 @@
 .search-result .info .info-bottom .price {
 }
 
+.em-small {
+  font-size: 12px;
+}
+
 @media only screen and (max-width: 600px) {
   .search-result {
     display: flex;

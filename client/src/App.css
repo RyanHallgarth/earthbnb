@@ -2,7 +2,7 @@
 
 /* Global Styles */
 :root {
-  --primary-color: #003699;
+  --primary-color: #3e930a;
   --dark-color: #333333;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
@@ -23,18 +23,13 @@ body {
   color: #333;
 }
 
-.location-marker {
-  font-size: 2rem;
-  color: maroon;
-}
-
 a {
-  color: var(--primary-color);
+  color: rgb(82, 82, 82);
   text-decoration: none;
 }
 
 a:hover {
-  color: #666;
+  color: #111;
 }
 
 ul {

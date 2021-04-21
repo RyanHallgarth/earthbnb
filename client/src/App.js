@@ -6,17 +6,32 @@ import Header from "./components/layout/Header";
 import Location from "./components/locations/Location";
 import SearchPage from "./components/pages/SearchPage";
 import axios from "axios";
-import Map from "./components/Map";
 
 function App() {
   const [locations, setLocations] = useState([]);
   const [location, setLocation] = useState([]);
 
   const searchLocations = async (text) => {
-    const res = await axios.get("api/v1/listings?page=1&limit=10");
-
+    console.log("click");
+    const res = await axios.get("api/v1/listings?page=3&limit=30");
     setLocations(res.data.content);
-    console.log(locations);
+  };
+
+  const highestRated = async () => {
+    const res = await axios.get("/api/v1/listings/toprated?limit=10");
+    setLocations(res.data);
+  };
+
+  const uniqueStays = async () => {
+    const res = await axios.get("/api/v1/listings/uniquestays?limit=10");
+    setLocations(res.data);
+  };
+
+  const entirePlace = async () => {
+    const res = await axios.get(
+      "/api/v1/listings/entireplace?limit=10&accomodates=10"
+    );
+    setLocations(res.data);
   };
 
   const getLocation = async (id) => {
@@ -30,7 +45,12 @@ function App() {
 
       <Switch>
         <Route exact path='/'>
-          <Home searchLocations={searchLocations} />
+          <Home
+            searchLocations={searchLocations}
+            highestRated={highestRated}
+            uniqueStays={uniqueStays}
+            entirePlace={entirePlace}
+          />
         </Route>
 
         <Route exact path='/search'>

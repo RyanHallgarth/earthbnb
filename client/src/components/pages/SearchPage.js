@@ -5,7 +5,7 @@ import Pagination from "../layout/Pagination";
 
 const SearchPage = ({ locations }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(10);
+  const [postsPerPage] = useState(10);
 
   //Change page
   const paginate = (pageNumber) => {
