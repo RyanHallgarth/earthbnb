@@ -10,6 +10,7 @@
   object-fit: cover;
   height: 200px;
   min-width: 200px;
+  max-width: 300px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -22,13 +23,7 @@
 }
 
 .search-result .info .info-top {
-  width: 80vw;
-}
-
-.search-result .heart {
-  position: absolute;
-  top: 20px;
-  right: 40px;
+  width: 80%;
 }
 
 .search-result .info .info-top > h3 {
@@ -46,7 +41,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
-  width: 70vw;
+  width: 100%;
 }
 
 .search-result .info .info-botton {

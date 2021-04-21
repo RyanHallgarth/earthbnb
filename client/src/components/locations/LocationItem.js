@@ -18,9 +18,8 @@ const LocationItem = ({
   },
 }) => {
   return (
-    <div className='search-result'>
+    <div className='search-result card grid-1'>
       <img src={thumbnail_url} alt='' />
-      <FavoriteBorderIcon className='heart' />
       <div className='info'>
         <div className='info-top'>
           <p>{street}</p>
@@ -44,6 +43,7 @@ const LocationItem = ({
           >
             More Details
           </Button>
+          <FavoriteBorderIcon className='heart' />
           <div className='price'>
             <h2>${price}</h2>
             <p>
