@@ -45,7 +45,6 @@ p {
 
 .title > h1 {
   font-weight: 500;
-  margin-top: 2rem;
 }
 
 .description > h2 {
@@ -59,12 +58,14 @@ p {
 
 .address {
   font-weight: 500;
-  width: 30vw;
   color: gray;
-
-  margin-bottom: 20px;
 }
 
 .note {
   margin-bottom: 10px;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
 }
