@@ -17,9 +17,15 @@ const LocationItem = ({
     review_scores_rating,
   },
 }) => {
+  const noImage =
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/480px-No_image_available.svg.png";
   return (
     <div className='search-result card grid-1'>
-      <img src={thumbnail_url} alt='' />
+      {thumbnail_url ? (
+        <img src={thumbnail_url} alt='' />
+      ) : (
+        <img src={noImage} alt='' />
+      )}
       <div className='info'>
         <div className='info-top'>
           <p>{street}</p>
@@ -31,7 +37,11 @@ const LocationItem = ({
           <div className='stars'>
             <h2>
               <StarIcon className='star' />
-              <strong className='strong'>{review_scores_rating}</strong>
+              {review_scores_rating ? (
+                <strong className='strong'>{review_scores_rating}</strong>
+              ) : (
+                <em className='small-em'>No Ratings Yet!</em>
+              )}
             </h2>
           </div>
 
@@ -46,9 +56,8 @@ const LocationItem = ({
           <FavoriteBorderIcon className='heart' />
           <div className='price'>
             <h2>${price}</h2>
-            <p>
-              <em>per night</em>
-            </p>
+
+            <em>per night</em>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 import "../../Banner.css";
 import { Button } from "@material-ui/core";
+import { Link } from "react-router-dom";
 import Search from "./Search";
 
 const Banner = ({ searchLocations }) => {
@@ -25,7 +26,15 @@ const Banner = ({ searchLocations }) => {
           Plan a getaway and assume a new identity. Never come back. We won't
           tell anyone.
         </h5>
-        <Button variant='outlined'>Explore Seattle</Button>
+        <Button
+          onClick={() => searchLocations()}
+          component={Link}
+          to={"/search"}
+          variant='outlined'
+          className='banner-btn'
+        >
+          Explore Seattle
+        </Button>
       </div>
     </div>
   );

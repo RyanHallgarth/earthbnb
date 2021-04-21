@@ -19,7 +19,7 @@
   color: #5f9c3a;
 }
 
-.banner .banner-info > button {
+.banner .banner-info .banner-btn {
   background-color: #3e930a;
   color: white;
   text-transform: inherit;
@@ -27,7 +27,7 @@
   font-weight: 600;
 }
 
-.banner .banner-info > button:hover {
+.banner .banner-info .banner-btn:hover {
   background-color: white;
   color: #3e930a;
 }

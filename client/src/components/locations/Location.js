@@ -16,6 +16,7 @@ import Map from "../Map";
 const Location = ({ location, match, getLocation }) => {
   useEffect(() => {
     getLocation(match.params.id);
+    // eslint-disable-next-line
   }, []);
 
   const {
