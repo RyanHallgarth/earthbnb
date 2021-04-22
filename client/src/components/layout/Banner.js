@@ -4,12 +4,12 @@ import { Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import Search from "./Search";
 
-const Banner = ({ searchLocations }) => {
+const Banner = ({ searchLocations, filterSearch }) => {
   const [showSearch, setShowSearch] = useState(false);
   return (
     <div className='banner'>
       <div className='banner-search'>
-        {showSearch && <Search searchLocations={searchLocations} />}
+        {showSearch && <Search filterSearch={filterSearch} />}
         <Button
           onClick={() => setShowSearch(!showSearch)}
           variant='outlined'
