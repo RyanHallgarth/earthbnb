@@ -2,8 +2,9 @@ import { React, useState } from "react";
 import "../../SearchPage.css";
 import Locations from "../locations/Locations";
 import Pagination from "../layout/Pagination";
+import Search from "../layout/Search";
 
-const SearchPage = ({ locations }) => {
+const SearchPage = ({ locations, filterSearch }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(10);
 
@@ -18,6 +19,9 @@ const SearchPage = ({ locations }) => {
 
   return (
     <div className='search-page'>
+      <div className='card'>
+        <Search filterSearch={filterSearch} />
+      </div>
       <Locations locations={currentPosts} />
       <Pagination
         postsPerPage={postsPerPage}
