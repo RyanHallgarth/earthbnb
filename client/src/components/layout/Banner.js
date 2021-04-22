@@ -18,24 +18,28 @@ const Banner = ({ searchLocations, filterSearch }) => {
           {showSearch ? "Hide Search" : "Search"}
         </Button>
       </div>
-      <div className='banner-info'>
-        <h1>
-          Escape <span id='green'>Reality</span>
-        </h1>
-        <h5>
-          Plan a getaway and assume a new identity. Never come back. We won't
-          tell anyone.
-        </h5>
-        <Button
-          onClick={() => searchLocations()}
-          component={Link}
-          to={"/search"}
-          variant='outlined'
-          className='banner-btn'
-        >
-          Explore Seattle
-        </Button>
-      </div>
+      {!showSearch ? (
+        <div className='banner-info'>
+          <h1>
+            Escape <span id='green'>Reality</span>
+          </h1>
+          <h5>
+            Plan a getaway and assume a new identity. Never come back. We won't
+            tell anyone.
+          </h5>
+          <Button
+            onClick={() => searchLocations()}
+            component={Link}
+            to={"/search"}
+            variant='outlined'
+            className='banner-btn'
+          >
+            Explore Seattle
+          </Button>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

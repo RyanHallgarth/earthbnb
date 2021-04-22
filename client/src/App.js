@@ -72,7 +72,7 @@ function App() {
         </Route>
 
         <Route exact path='/search'>
-          <SearchPage locations={locations} />
+          <SearchPage locations={locations} filterSearch={filterSearch} />
         </Route>
 
         <Route
