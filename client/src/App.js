@@ -11,9 +11,19 @@ function App() {
   const [locations, setLocations] = useState([]);
   const [location, setLocation] = useState([]);
 
-  const searchLocations = async (text) => {
-    console.log("click");
-    const res = await axios.get("api/v1/listings?page=3&limit=30");
+  const filterSearch = async (minGuests, minBaths) => {
+    console.log("MG: " + minGuests);
+    console.log("MB: " + minBaths);
+
+    const res = await axios.get(
+      `api/v1/listings?page=3&limit=30&min_guests=${minGuests}&min_bathrooms=${minBaths}`
+    );
+    setLocations(res.data.content);
+  };
+
+  const searchLocations = async () => {
+    const res = await axios.get(`api/v1/listings?page=3&limit=30`);
+    console.log("clicky");
     setLocations(res.data.content);
   };
 
@@ -47,6 +57,7 @@ function App() {
         <Route exact path='/'>
           <Home
             searchLocations={searchLocations}
+            filterSearch={filterSearch}
             highestRated={highestRated}
             uniqueStays={uniqueStays}
             entirePlace={entirePlace}

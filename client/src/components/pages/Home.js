@@ -4,10 +4,16 @@ import Banner from "../layout/Banner";
 import Card from "../layout/Card";
 import { Link } from "react-router-dom";
 
-const Home = ({ searchLocations, highestRated, uniqueStays, entirePlace }) => {
+const Home = ({
+  searchLocations,
+  highestRated,
+  uniqueStays,
+  entirePlace,
+  filterSearch,
+}) => {
   return (
     <div className='home'>
-      <Banner searchLocations={searchLocations} />
+      <Banner searchLocations={searchLocations} filterSearch={filterSearch} />
 
       <div className='home-section'>
         <Link onClick={() => highestRated()} to={"/search"}>
