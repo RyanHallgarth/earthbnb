@@ -11,12 +11,19 @@ function App() {
   const [locations, setLocations] = useState([]);
   const [location, setLocation] = useState([]);
 
-  const filterSearch = async (minGuests, minBaths) => {
-    console.log("MG: " + minGuests);
-    console.log("MB: " + minBaths);
-
+  const filterSearch = async (
+    minGuests,
+    minBaths,
+    minBedrooms,
+    minBeds,
+    priceRange
+  ) => {
     const res = await axios.get(
-      `api/v1/listings?page=3&limit=30&min_guests=${minGuests}&min_bathrooms=${minBaths}`
+      `api/v1/listings?page=3&limit=30&min_guests=${minGuests}&min_bathrooms=${minBaths}&min_bedrooms=${minBedrooms}&min_beds=${minBeds}&price[gte]=${priceRange[0]}&price[lte]=${priceRange[1]}`
+    );
+
+    console.log(
+      `api/v1/listings?page=3&limit=30&min_guests=${minGuests}&min_bathrooms=${minBaths}&min_bedrooms=${minBedrooms}&min_beds=${minBeds}&'price[gte]'=${priceRange[0]}&'price[lte]'=${priceRange[1]}`
     );
     setLocations(res.data.content);
   };

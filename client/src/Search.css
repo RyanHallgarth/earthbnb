@@ -2,7 +2,26 @@
   background-color: white;
   position: absolute;
   margin-top: 36px;
-  width: 90vw;
+  width: 100vw;
   min-height: 275px;
   border-radius: 0 0 10px 10px;
+  z-index: 10;
+  -webkit-box-shadow: 7px 11px 15px -3px rgba(0, 0, 0, 0.67);
+  box-shadow: 7px 11px 15px -3px rgba(0, 0, 0, 0.67);
+}
+
+.search .parameters {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.search .parameters .form-items {
+  margin: 20px;
+}
+
+.search .parameters .form-items > button:hover {
+  background-color: #3e930a;
+  color: white;
 }
