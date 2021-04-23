@@ -5,6 +5,7 @@ import Home from "./components/pages/Home";
 import Header from "./components/layout/Header";
 import Location from "./components/locations/Location";
 import SearchPage from "./components/pages/SearchPage";
+import Profile from "./components/pages/Profile";
 import axios from "axios";
 
 function App() {
@@ -89,7 +90,6 @@ function App() {
     const res = await axios.get(`/api/auth/user`);
     setCurrentUser(res.data);
   };
-
   console.log(currentUser);
 
   return (
@@ -113,6 +113,10 @@ function App() {
             filterSearch={filterSearch}
             loading={loading}
           />
+        </Route>
+
+        <Route exact path='/profile/:id'>
+          <Profile currentUser={currentUser} logOut={logOut} />
         </Route>
 
         <Route

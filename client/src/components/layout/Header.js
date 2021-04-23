@@ -2,11 +2,13 @@ import React from "react";
 import "../../Header.css";
 import { Avatar, Button } from "@material-ui/core";
 import LoginBtn from "../LoginBtn";
-import LogoutBtn from "../LogoutBtn";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
+import { useHistory } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
 const Header = ({ currentUser, logOut }) => {
+  const history = useHistory();
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = (event) => {
@@ -15,6 +17,10 @@ const Header = ({ currentUser, logOut }) => {
 
   const handleClose = () => {
     setAnchorEl(null);
+  };
+  const profileClose = () => {
+    setAnchorEl(null);
+    history.push(`/profile/${currentUser.email}`);
   };
 
   const logOutClose = () => {
@@ -29,7 +35,6 @@ const Header = ({ currentUser, logOut }) => {
         src='https://i.ibb.co/zX4YzNS/header-logo-txt2.png'
         alt=''
       />
-
       <div className='header-right'>
         <div className='log'>{!currentUser.picture && <LoginBtn />}</div>
         <Button
@@ -48,7 +53,7 @@ const Header = ({ currentUser, logOut }) => {
             open={Boolean(anchorEl)}
             onClose={handleClose}
           >
-            <MenuItem onClick={handleClose}>Profile</MenuItem>
+            <MenuItem onClick={profileClose}>Profile</MenuItem>
 
             <MenuItem onClick={logOutClose}>Logout</MenuItem>
           </Menu>
@@ -58,4 +63,4 @@ const Header = ({ currentUser, logOut }) => {
   );
 };
 
-export default Header;
+export default withRouter(Header);
