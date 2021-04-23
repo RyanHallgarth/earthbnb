@@ -11,6 +11,7 @@ function App() {
   const [locations, setLocations] = useState([]);
   const [location, setLocation] = useState([]);
   const [currentUser, setCurrentUser] = useState({});
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     if (currentUser) {
@@ -28,6 +29,7 @@ function App() {
     minBeds,
     priceRange
   ) => {
+    setLoading(true);
     const res = await axios.get(
       `api/v1/listings?page=3&limit=30&min_guests=${minGuests}&min_bathrooms=${minBaths}&min_bedrooms=${minBedrooms}&min_beds=${minBeds}&price[gte]=${priceRange[0]}&price[lte]=${priceRange[1]}`
     );
@@ -36,34 +38,45 @@ function App() {
       `api/v1/listings?page=3&limit=30&min_guests=${minGuests}&min_bathrooms=${minBaths}&min_bedrooms=${minBedrooms}&min_beds=${minBeds}&'price[gte]'=${priceRange[0]}&'price[lte]'=${priceRange[1]}`
     );
     setLocations(res.data.content);
+    setLoading(false);
   };
 
   const searchLocations = async () => {
+    setLoading(true);
     const res = await axios.get(`api/v1/listings?page=3&limit=30`);
     console.log("clicky");
     setLocations(res.data.content);
+    setLoading(false);
   };
 
   const highestRated = async () => {
+    setLoading(true);
     const res = await axios.get("/api/v1/listings/toprated?limit=10");
     setLocations(res.data);
+    setLoading(false);
   };
 
   const uniqueStays = async () => {
+    setLoading(true);
     const res = await axios.get("/api/v1/listings/uniquestays?limit=10");
     setLocations(res.data);
+    setLoading(false);
   };
 
   const entirePlace = async () => {
+    setLoading(true);
     const res = await axios.get(
       "/api/v1/listings/entireplace?limit=10&accomodates=10"
     );
     setLocations(res.data);
+    setLoading(false);
   };
 
   const getLocation = async (id) => {
+    setLoading(true);
     const res = await axios.get(`/api/v1/listings/listing/${id}`);
     setLocation(res.data[0]);
+    setLoading(false);
   };
 
   const logOut = async () => {
@@ -95,7 +108,11 @@ function App() {
         </Route>
 
         <Route exact path='/search'>
-          <SearchPage locations={locations} filterSearch={filterSearch} />
+          <SearchPage
+            locations={locations}
+            filterSearch={filterSearch}
+            loading={loading}
+          />
         </Route>
 
         <Route

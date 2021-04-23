@@ -10,10 +10,15 @@ const Home = ({
   uniqueStays,
   entirePlace,
   filterSearch,
+  loading,
 }) => {
   return (
     <div className='home'>
-      <Banner searchLocations={searchLocations} filterSearch={filterSearch} />
+      <Banner
+        searchLocations={searchLocations}
+        filterSearch={filterSearch}
+        loading={loading}
+      />
 
       <div className='home-section'>
         <Link onClick={() => highestRated()} to={"/search"}>

@@ -4,7 +4,7 @@ import Locations from "../locations/Locations";
 import Pagination from "../layout/Pagination";
 import Search from "../layout/Search";
 
-const SearchPage = ({ locations, filterSearch }) => {
+const SearchPage = ({ locations, filterSearch, loading }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(10);
 
@@ -22,12 +22,14 @@ const SearchPage = ({ locations, filterSearch }) => {
       <div className='card'>
         <Search filterSearch={filterSearch} />
       </div>
-      <Locations locations={currentPosts} />
-      <Pagination
-        postsPerPage={postsPerPage}
-        totalPosts={locations.length}
-        paginate={paginate}
-      />
+      <Locations locations={currentPosts} loading={loading} />
+      {!loading && (
+        <Pagination
+          postsPerPage={postsPerPage}
+          totalPosts={locations.length}
+          paginate={paginate}
+        />
+      )}
     </div>
   );
 };
