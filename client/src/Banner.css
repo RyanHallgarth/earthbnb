@@ -46,9 +46,6 @@
   font-weight: 900 !important;
   text-transform: inherit !important;
   color: white !important;
-  position: absolute;
-  width: 100vw;
-  z-index: 20;
 }
 
 .banner .banner-searchButton:hover {

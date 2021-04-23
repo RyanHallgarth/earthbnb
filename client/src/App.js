@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { React, useState, useEffect } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/pages/Home";
@@ -10,6 +10,16 @@ import axios from "axios";
 function App() {
   const [locations, setLocations] = useState([]);
   const [location, setLocation] = useState([]);
+  const [currentUser, setCurrentUser] = useState({});
+
+  useEffect(() => {
+    if (currentUser) {
+      getUser();
+    } else {
+      setCurrentUser({});
+    }
+    // eslint-disable-next-line
+  }, []);
 
   const filterSearch = async (
     minGuests,
@@ -56,9 +66,22 @@ function App() {
     setLocation(res.data[0]);
   };
 
+  const logOut = async () => {
+    const res = await axios.get(`/api/auth/logout`);
+    setCurrentUser({});
+    console.log("Log Out!");
+  };
+
+  const getUser = async () => {
+    const res = await axios.get(`/api/auth/user`);
+    setCurrentUser(res.data);
+  };
+
+  console.log(currentUser);
+
   return (
     <Router>
-      <Header />
+      <Header currentUser={currentUser} logOut={logOut} />
 
       <Switch>
         <Route exact path='/'>
