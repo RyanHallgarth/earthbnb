@@ -6,13 +6,21 @@ const router = express.Router();
 const passport = require('passport');
 
 require('../../passport/passport_google');
+const mongoose = require('mongoose');
+require('../../models/User');
+
+const User = mongoose.model('users');
 
 /* GET users profile. */
 router.get('/user', (req, res) => {
   // If a user is logged in provide their information
   if (req.isAuthenticated()) {
     const loggedInUser = req.user;
-    res.json(loggedInUser);
+    User.findOne({
+      _id: loggedInUser._id,
+    }).then((user) => {
+      res.json(user);
+    });
   } else {
     res.status(404).json({ error: 'No user logged in' });
   }
