@@ -1,7 +1,10 @@
-import { React } from "react";
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import Favorite from "@material-ui/icons/Favorite";
+import FavoriteBorder from "@material-ui/icons/FavoriteBorder";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+import Checkbox from "@material-ui/core/Checkbox";
 import StarIcon from "@material-ui/icons/Star";
 import { Button } from "@material-ui/core";
 import "../../LocationItem.css";
@@ -17,6 +20,11 @@ const LocationItem = ({
     review_scores_rating,
   },
 }) => {
+  const [favorite, setFavorite] = useState(false);
+  const onChange = (e) => {
+    setFavorite(!favorite);
+  };
+
   const noImage =
     "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/480px-No_image_available.svg.png";
   return (
@@ -31,7 +39,16 @@ const LocationItem = ({
           <p>{street}</p>
           <h3>{name}</h3>
           <p>____</p>
-          <p>{summary}</p>
+          {summary ? (
+            <p>{summary}</p>
+          ) : (
+            <p>
+              There is currently no summary on file for this location. We can
+              only assume the host of this location will add a summary soon.
+              Feel free to check this location at a later date for an updated
+              summary.
+            </p>
+          )}
         </div>
         <div className='info-bottom'>
           <div className='stars'>
@@ -53,7 +70,17 @@ const LocationItem = ({
           >
             More Details
           </Button>
-          <FavoriteBorderIcon className='heart' />
+          <FormControlLabel
+            control={
+              <Checkbox
+                icon={<FavoriteBorder />}
+                checkedIcon={<Favorite />}
+                name='favorite'
+                onChange={onChange}
+              />
+            }
+            label='Favorite Location'
+          />
           <div className='price'>
             <h2>${price}</h2>
 
