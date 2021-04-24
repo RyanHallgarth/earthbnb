@@ -48,6 +48,11 @@ favoriteRouter.post('/:listingID', ensureAuthenticated, (req, res) => {
         .status(200)
         .json({ message: `${req.params.listingID} Added to user favorites` });
     })
+    .then(() => {
+      fetch(
+        `https://us-central1-cit41200-u4-earthbnb.cloudfunctions.net/favorites?operation=inc&id=${req.params.listingID}`
+      );
+    })
     .catch((err) => {
       res.status(404).json({ message: 'No user logged in' });
     });
@@ -65,6 +70,11 @@ favoriteRouter.delete('/:listingID', ensureAuthenticated, (req, res) => {
       res.status(200).json({
         message: `${req.params.listingID} Deleted from user favorites`,
       });
+    })
+    .then(() => {
+      fetch(
+        `https://us-central1-cit41200-u4-earthbnb.cloudfunctions.net/favorites?operation=dec&id=${req.params.listingID}`
+      );
     })
     .catch((err) => {
       res.status(404).json({ message: 'No user logged in' });
