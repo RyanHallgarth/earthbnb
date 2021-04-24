@@ -10,8 +10,9 @@
   - [/user](###user)
 - [/api/v1](##/v1)
   - [/listings](###listings)
-  - [/listings/listing/:id](###listings/listing/:id)
-  - [/listings/toprated](###listings/toprated)
+    - [/listings/listing/:id](###listings/listing/:id)
+    - [/listings/toprated](###listings/toprated)
+  - [/favorite](###favorite)
 
 <!-- toc -->
 
@@ -663,3 +664,43 @@ A [limit] number of unique stays listings will be returned. Returns top rate tha
       console.log(error);
     });
   ```
+
+### **favorite/:listingID'**
+
+returns a bool if a logged in user has favorited [listingID] property
+
+- **URL**
+
+  http://localhost:8080/api/v1/favorite/:listingID
+
+- **Method:**
+
+  `GET`
+
+- **Success Response:**
+
+  If successful you will be returned true if user fovaorties a property of false if they do not.
+
+### **favorite/:listingID'**
+
+Adds the listing to a logged in users list of favorite properties.
+
+- **URL**
+
+  http://localhost:8080/api/v1/favorite/:listingID
+
+- **Method:**
+
+  `POST`
+
+### **favorite/:listingID'**
+
+Removes the listing from a logged in users list of favorite properties.
+
+- **URL**
+
+  http://localhost:8080/api/v1/favorite/:listingID
+
+- **Method:**
+
+  `DELETE`
