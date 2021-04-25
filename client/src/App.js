@@ -14,14 +14,25 @@ function App() {
   const [currentUser, setCurrentUser] = useState({});
   const [loading, setLoading] = useState(false);
 
+  // useEffect(() => {
+  //   getUser();
+  //   // eslint-disable-next-line
+  // }, []);
+
   useEffect(() => {
-    if (currentUser) {
-      getUser();
-    } else {
-      setCurrentUser({});
+    const data = localStorage.getItem("user");
+    if (data) {
+      setCurrentUser(JSON.parse(data));
     }
     // eslint-disable-next-line
   }, []);
+
+  useEffect(() => {
+    localStorage.setItem("user", JSON.stringify(currentUser));
+    // eslint-disable-next-line
+  });
+
+  //localStorage.setItem("user", JSON.stringify(currentUser));
 
   const filterSearch = async (
     minGuests,
@@ -48,6 +59,7 @@ function App() {
     console.log("clicky");
     setLocations(res.data.content);
     setLoading(false);
+    console.log(locations);
   };
 
   const highestRated = async () => {
@@ -87,10 +99,16 @@ function App() {
   };
 
   const getUser = async () => {
+    console.log("getUser call");
     const res = await axios.get(`/api/auth/user`);
     setCurrentUser(res.data);
   };
-  console.log(currentUser);
+
+  const addFav = async (id) => {
+    const res = await axios.post(`api/v1/favorite/${id}`);
+    console.log(`api/v1/favorite/${id}`);
+    console.log(currentUser.favorites);
+  };
 
   return (
     <Router>
@@ -112,11 +130,12 @@ function App() {
             locations={locations}
             filterSearch={filterSearch}
             loading={loading}
+            addFav={addFav}
           />
         </Route>
 
         <Route exact path='/profile/:id'>
-          <Profile currentUser={currentUser} logOut={logOut} />
+          <Profile currentUser={currentUser} getUser={getUser} />
         </Route>
 
         <Route

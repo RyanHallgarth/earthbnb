@@ -2,14 +2,14 @@ import { React } from "react";
 import LocationItem from "./LocationItem";
 import Spinner from "../layout/Spinner";
 
-const Locations = ({ locations, loading }) => {
+const Locations = ({ locations, loading, addFav }) => {
   if (loading) {
     return <Spinner />;
   } else {
     return (
-      <div id='locations'>
+      <div>
         {locations.map((location) => (
-          <LocationItem key={location.id} location={location} />
+          <LocationItem key={location.id} addFav={addFav} location={location} />
         ))}
       </div>
     );

@@ -10,6 +10,7 @@ import { Button } from "@material-ui/core";
 import "../../LocationItem.css";
 
 const LocationItem = ({
+  addFav,
   location: {
     id,
     name,
@@ -20,9 +21,14 @@ const LocationItem = ({
     review_scores_rating,
   },
 }) => {
-  const [favorite, setFavorite] = useState(false);
-  const onChange = (e) => {
+  const [favorite, setFavorite] = useState(true);
+
+  const onChange = () => {
     setFavorite(!favorite);
+    if (favorite === true) {
+      addFav(id);
+      console.log("clicked favorite IF: " + id);
+    }
   };
 
   const noImage =
@@ -79,7 +85,7 @@ const LocationItem = ({
                 onChange={onChange}
               />
             }
-            label='Favorite Location'
+            label={"Favorite Location"}
           />
           <div className='price'>
             <h2>${price}</h2>
