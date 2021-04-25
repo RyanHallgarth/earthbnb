@@ -5,6 +5,7 @@ const {
   selectTopListings,
   selectUniqueListings,
   selectEntirePlaceListings,
+  selectListingamenities,
 } = require('../helpers/listings.helpers');
 
 const listingRouter = express.Router();
@@ -13,6 +14,12 @@ listingRouter.get('/', paginatedResults(), (req, res) => {});
 
 listingRouter.get('/listing/:id', async (req, res) => {
   const listing = await selectListing(req.params.id, (listing) => {
+    res.json(listing);
+  });
+});
+
+listingRouter.get('/listing/amenities/:id', async (req, res) => {
+  const listing = await selectListingamenities(req.params.id, (listing) => {
     res.json(listing);
   });
 });

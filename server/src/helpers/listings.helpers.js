@@ -203,8 +203,31 @@ const selectEntirePlaceListings = async (
   );
 };
 
+const selectListingamenities = async (id, callback) => {
+  connection.query(
+    `SELECT amenities 
+    FROM listings 
+    WHERE id = ${id};`,
+    (error, results) => {
+      if (error) callback({ error: error });
+      else {
+        //console.log(JSON.parse(results.amenities[0]));
+        console.log(results[0].amenities);
+        var amenitiesStr = results[0].amenities;
+        amenitiesStr = amenitiesStr.replace('{', '');
+        amenitiesStr = amenitiesStr.replace('}', '');
+        amenitiesStr = amenitiesStr.replace(/"/g, '');
+        const amenities = amenitiesStr.split(',');
+        console.log(amenities);
+        callback(amenities);
+      }
+    }
+  );
+};
+
 exports.selectListing = selectListing;
 exports.paginatedResults = paginatedResults;
 exports.selectTopListings = selectTopListings;
 exports.selectUniqueListings = selectUniqueListings;
 exports.selectEntirePlaceListings = selectEntirePlaceListings;
+exports.selectListingamenities = selectListingamenities;
