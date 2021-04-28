@@ -64,7 +64,7 @@ favoriteRouter.delete('/:listingID', ensureAuthenticated, (req, res) => {
     {
       _id: req.user._id,
     },
-    { $pullAll: { favorites: req.params.listingID } }
+    { $pullAll: { favorites: [req.params.listingID] } }
   )
     .then(() => {
       res.status(200).json({
