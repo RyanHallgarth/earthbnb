@@ -1,11 +1,11 @@
 import React from "react";
 import FavoriteItem from "./FavoriteItem";
 
-const Favorites = ({ yee, deleteFav, favIdArr }) => {
+const Favorites = ({ favorites, deleteFav, favIdArr }) => {
   return (
     <div>
       <div>
-        {yee.map((item, index) => (
+        {favorites.map((item, index) => (
           <FavoriteItem
             key={index}
             item={item}
