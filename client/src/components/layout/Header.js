@@ -29,25 +29,27 @@ const Header = ({ currentUser, logOut }) => {
   };
 
   return (
-    <div className='header'>
-      <img
-        className='header-icon'
-        src='https://i.ibb.co/zX4YzNS/header-logo-txt2.png'
-        alt=''
-      />
-      <div className='header-right'>
-        <div className='log'>{!currentUser.picture && <LoginBtn />}</div>
+    <div className="header">
+      <a href="/">
+        <img
+          className="header-icon"
+          src="https://i.ibb.co/zX4YzNS/header-logo-txt2.png"
+          alt=""
+        />
+      </a>
+      <div className="header-right">
+        <div className="log">{!currentUser.picture && <LoginBtn />}</div>
         <Button
-          aria-controls='simple-menu'
-          aria-haspopup='true'
+          aria-controls="simple-menu"
+          aria-haspopup="true"
           onClick={handleClick}
         >
-          <Avatar src={currentUser.picture} className='avatar' />
+          <Avatar src={currentUser.picture} className="avatar" />
         </Button>
 
         {currentUser.picture && (
           <Menu
-            id='simple-menu'
+            id="simple-menu"
             anchorEl={anchorEl}
             keepMounted
             open={Boolean(anchorEl)}
