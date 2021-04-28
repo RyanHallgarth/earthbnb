@@ -14,8 +14,7 @@ function App() {
   const [currentUser, setCurrentUser] = useState({});
   const [loading, setLoading] = useState(false);
   const [yee, setYee] = useState([]);
-
-  const { favorites } = currentUser;
+  const [favIdArr, setFavIdArr] = useState([]);
 
   useEffect(() => {
     getUser();
@@ -90,6 +89,7 @@ function App() {
     console.log("getUser call");
     const res = await axios.get(`/api/auth/user`);
     setCurrentUser(res.data);
+    setFavIdArr(res.data.favorites);
   };
 
   const addFav = async (id) => {
@@ -97,10 +97,7 @@ function App() {
     console.log(`api/v1/favorite/${id}`);
   };
 
-  console.log(yee);
-
   const deleteFav = async (id) => {
-    console.log(`bf: ${yee[0].data[0].name}`);
     await axios
       .delete(`/api/v1/favorite/${id}`)
       .then((res) => {
@@ -110,13 +107,13 @@ function App() {
         console.log(err);
         console.log(err.response);
       });
-    getUser();
-    displayFav();
+
+    setYee(yee.filter((favorite) => favorite.data[0].id !== id));
   };
 
-  const displayFav = async () => {
-    if (favorites) {
-      const res = favorites.map((favorite) =>
+  const displayFav = () => {
+    if (favIdArr) {
+      const res = favIdArr.map((favorite) =>
         axios.get(`/api/v1/listings/listing/${favorite}`)
       );
 
@@ -150,15 +147,21 @@ function App() {
           />
         </Route>
 
-        <Route exact path='/profile/:email'>
-          <Profile
-            currentUser={currentUser}
-            getUser={getUser}
-            deleteFav={deleteFav}
-            displayFav={displayFav}
-            yee={yee}
-          />
-        </Route>
+        <Route
+          exact
+          path='/profile/:email'
+          render={(props) => (
+            <Profile
+              {...props}
+              currentUser={currentUser}
+              getUser={getUser}
+              deleteFav={deleteFav}
+              displayFav={displayFav}
+              yee={yee}
+              favIdArr={favIdArr}
+            />
+          )}
+        />
 
         <Route
           exact

@@ -1,13 +1,19 @@
 import { React, useState, useEffect } from "react";
 import Favorites from "../favorites/Favorites";
-import axios from "axios";
 
-const Profile = ({ currentUser, getUser, yee, deleteFav, displayFav }) => {
-  const { displayName, email, picture, favorites } = currentUser;
+const Profile = ({
+  currentUser,
+  getUser,
+  yee,
+  deleteFav,
+  displayFav,
+  favIdArr,
+}) => {
+  const { displayName, email, picture } = currentUser;
 
   useEffect(() => {
     getUser();
-    displayFav(favorites);
+    displayFav(favIdArr);
     // eslint-disable-next-line
   }, []);
 
@@ -17,7 +23,7 @@ const Profile = ({ currentUser, getUser, yee, deleteFav, displayFav }) => {
       <div>{displayName}</div>
       <div>{email}</div>
 
-      <Favorites yee={yee} deleteFav={deleteFav} favorites={favorites} />
+      <Favorites yee={yee} deleteFav={deleteFav} favIdArr={favIdArr} />
     </div>
   );
 };
