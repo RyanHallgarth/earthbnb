@@ -144,6 +144,7 @@ function App() {
             filterSearch={filterSearch}
             loading={loading}
             addFav={addFav}
+            currentUser={currentUser}
           />
         </Route>
 
