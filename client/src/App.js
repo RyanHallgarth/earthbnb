@@ -13,26 +13,14 @@ function App() {
   const [location, setLocation] = useState([]);
   const [currentUser, setCurrentUser] = useState({});
   const [loading, setLoading] = useState(false);
+  const [yee, setYee] = useState([]);
 
-  // useEffect(() => {
-  //   getUser();
-  //   // eslint-disable-next-line
-  // }, []);
+  const { favorites } = currentUser;
 
   useEffect(() => {
-    const data = localStorage.getItem("user");
-    if (data) {
-      setCurrentUser(JSON.parse(data));
-    }
+    getUser();
     // eslint-disable-next-line
   }, []);
-
-  useEffect(() => {
-    localStorage.setItem("user", JSON.stringify(currentUser));
-    // eslint-disable-next-line
-  });
-
-  //localStorage.setItem("user", JSON.stringify(currentUser));
 
   const filterSearch = async (
     minGuests,
@@ -107,7 +95,29 @@ function App() {
   const addFav = async (id) => {
     const res = await axios.post(`api/v1/favorite/${id}`);
     console.log(`api/v1/favorite/${id}`);
-    console.log(currentUser.favorites);
+  };
+
+  const deleteFav = async (id) => {
+    await axios
+      .delete(`/api/v1/favorite/${id}`)
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+        console.log(err.response);
+      });
+    console.log(`/api/v1/favorite/${id}`);
+  };
+
+  const displayFav = async () => {
+    const res = favorites.map((favorite) =>
+      axios.get(`/api/v1/listings/listing/${favorite}`)
+    );
+
+    axios.all(res).then(function (result) {
+      setYee(result);
+    });
   };
 
   return (
@@ -134,8 +144,14 @@ function App() {
           />
         </Route>
 
-        <Route exact path='/profile/:id'>
-          <Profile currentUser={currentUser} getUser={getUser} />
+        <Route exact path='/profile/:email'>
+          <Profile
+            currentUser={currentUser}
+            getUser={getUser}
+            deleteFav={deleteFav}
+            displayFav={displayFav}
+            yee={yee}
+          />
         </Route>
 
         <Route
