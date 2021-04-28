@@ -1,20 +1,14 @@
-import { React } from "react";
+import { React, useState, useEffect } from "react";
+import Favorites from "../favorites/Favorites";
 import axios from "axios";
 
-const Profile = ({ currentUser }) => {
+const Profile = ({ currentUser, getUser, yee, deleteFav, displayFav }) => {
   const { displayName, email, picture, favorites } = currentUser;
 
-  const callArray = favorites.map(
-    (favorite) => `/api/v1/listings/listing/${favorite}`
-  );
-
-  const buildObj = () => {
-    const res = callArray.map((call) =>
-      axios.get(call).then((res) => {
-        console.log(res.data);
-      })
-    );
-  };
+  useEffect(() => {
+    displayFav(favorites);
+    // eslint-disable-next-line
+  }, []);
 
   return (
     <div>
@@ -22,7 +16,7 @@ const Profile = ({ currentUser }) => {
       <div>{displayName}</div>
       <div>{email}</div>
 
-      {favorites}
+      <Favorites yee={yee} deleteFav={deleteFav} />
     </div>
   );
 };

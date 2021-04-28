@@ -11,6 +11,7 @@ import "../../LocationItem.css";
 
 const LocationItem = ({
   addFav,
+  deleteFav,
   location: {
     id,
     name,
@@ -27,7 +28,10 @@ const LocationItem = ({
     setFavorite(!favorite);
     if (favorite === true) {
       addFav(id);
-      console.log("clicked favorite IF: " + id);
+      console.log("addFav: " + id);
+    } else {
+      deleteFav(id);
+      console.log("deleteFav: " + id);
     }
   };
 

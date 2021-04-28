@@ -1,0 +1,14 @@
+.fav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.fav-container > img {
+  width: 150px;
+  margin-right: 40px;
+}
+
+.fav-container > h2 {
+  margin-right: 40px;
+}
