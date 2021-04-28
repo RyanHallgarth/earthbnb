@@ -13,7 +13,7 @@ function App() {
   const [location, setLocation] = useState([]);
   const [currentUser, setCurrentUser] = useState({});
   const [loading, setLoading] = useState(false);
-  const [yee, setYee] = useState([]);
+  const [favorites, setFavorites] = useState([]);
   const [favIdArr, setFavIdArr] = useState([]);
 
   useEffect(() => {
@@ -108,7 +108,7 @@ function App() {
         console.log(err.response);
       });
 
-    setYee(yee.filter((favorite) => favorite.data[0].id !== id));
+    setFavorites(favorites.filter((favorite) => favorite.data[0].id !== id));
   };
 
   const displayFav = () => {
@@ -118,7 +118,7 @@ function App() {
       );
 
       axios.all(res).then(function (result) {
-        setYee(result);
+        setFavorites(result);
       });
     }
   };
@@ -157,7 +157,7 @@ function App() {
               getUser={getUser}
               deleteFav={deleteFav}
               displayFav={displayFav}
-              yee={yee}
+              favorites={favorites}
               favIdArr={favIdArr}
             />
           )}

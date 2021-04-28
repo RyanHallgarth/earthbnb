@@ -4,7 +4,7 @@ import Favorites from "../favorites/Favorites";
 const Profile = ({
   currentUser,
   getUser,
-  yee,
+  favorites,
   deleteFav,
   displayFav,
   favIdArr,
@@ -23,7 +23,11 @@ const Profile = ({
       <div>{displayName}</div>
       <div>{email}</div>
 
-      <Favorites yee={yee} deleteFav={deleteFav} favIdArr={favIdArr} />
+      <Favorites
+        favorites={favorites}
+        deleteFav={deleteFav}
+        favIdArr={favIdArr}
+      />
     </div>
   );
 };
