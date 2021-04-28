@@ -6,6 +6,7 @@ const Profile = ({ currentUser, getUser, yee, deleteFav, displayFav }) => {
   const { displayName, email, picture, favorites } = currentUser;
 
   useEffect(() => {
+    getUser();
     displayFav(favorites);
     // eslint-disable-next-line
   }, []);
@@ -16,7 +17,7 @@ const Profile = ({ currentUser, getUser, yee, deleteFav, displayFav }) => {
       <div>{displayName}</div>
       <div>{email}</div>
 
-      <Favorites yee={yee} deleteFav={deleteFav} />
+      <Favorites yee={yee} deleteFav={deleteFav} favorites={favorites} />
     </div>
   );
 };

@@ -97,7 +97,10 @@ function App() {
     console.log(`api/v1/favorite/${id}`);
   };
 
+  console.log(yee);
+
   const deleteFav = async (id) => {
+    console.log(`bf: ${yee[0].data[0].name}`);
     await axios
       .delete(`/api/v1/favorite/${id}`)
       .then((res) => {
@@ -107,17 +110,20 @@ function App() {
         console.log(err);
         console.log(err.response);
       });
-    console.log(`/api/v1/favorite/${id}`);
+    getUser();
+    displayFav();
   };
 
   const displayFav = async () => {
-    const res = favorites.map((favorite) =>
-      axios.get(`/api/v1/listings/listing/${favorite}`)
-    );
+    if (favorites) {
+      const res = favorites.map((favorite) =>
+        axios.get(`/api/v1/listings/listing/${favorite}`)
+      );
 
-    axios.all(res).then(function (result) {
-      setYee(result);
-    });
+      axios.all(res).then(function (result) {
+        setYee(result);
+      });
+    }
   };
 
   return (
