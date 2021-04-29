@@ -2,7 +2,14 @@ import { React } from "react";
 import LocationItem from "./LocationItem";
 import Spinner from "../layout/Spinner";
 
-const Locations = ({ locations, loading, addFav, deleteFav, currentUser }) => {
+const Locations = ({
+  locations,
+  loading,
+  addFav,
+  deleteFav,
+  currentUser,
+  checked,
+}) => {
   if (loading) {
     return <Spinner />;
   } else {
@@ -15,6 +22,7 @@ const Locations = ({ locations, loading, addFav, deleteFav, currentUser }) => {
             deleteFav={deleteFav}
             location={location}
             currentUser={currentUser}
+            checked={checked}
           />
         ))}
       </div>
