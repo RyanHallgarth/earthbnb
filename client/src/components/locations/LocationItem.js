@@ -26,6 +26,7 @@ const LocationItem = ({
   addFav,
   deleteFav,
   currentUser,
+  checked,
   location: {
     id,
     name,
@@ -111,6 +112,7 @@ const LocationItem = ({
             <FormControlLabel
               control={
                 <Checkbox
+                  checked={checked(id)}
                   icon={<FavoriteBorder />}
                   checkedIcon={<Favorite />}
                   name='favorite'

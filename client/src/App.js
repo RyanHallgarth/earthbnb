@@ -15,6 +15,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [favorites, setFavorites] = useState([]);
   const [favIdArr, setFavIdArr] = useState([]);
+  const [checkFavs, setCheckFavs] = useState(false);
 
   useEffect(() => {
     getUser();
@@ -123,6 +124,13 @@ function App() {
     }
   };
 
+  const checked = async (id) => {
+    const res = await axios.get(`/api/v1/favorite/${id}`).catch((err) => {
+      console.log(err);
+      console.log(err.response);
+    });
+  };
+
   return (
     <Router>
       <Header currentUser={currentUser} logOut={logOut} />
@@ -144,7 +152,9 @@ function App() {
             filterSearch={filterSearch}
             loading={loading}
             addFav={addFav}
+            deleteFav={deleteFav}
             currentUser={currentUser}
+            checked={checked}
           />
         </Route>
 
