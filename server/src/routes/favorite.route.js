@@ -24,11 +24,9 @@ favoriteRouter.get('/:listingID', ensureAuthenticated, (req, res) => {
     _id: req.user._id,
   })
     .then((user) => {
-      if (user.favorites.find((el) => el === req.params.listingID)) {
-        res.send('true');
-      } else {
-        res.status(404).send('false');
-      }
+      const userFavorites = user.favorites;
+      const isInFavorites = userFavorites.includes(req.params.listingID);
+      res.send(isInFavorites);
     })
     .catch((err) => {
       res.status(404).json({ message: 'No user logged in' });
