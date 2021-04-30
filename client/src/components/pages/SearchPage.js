@@ -12,6 +12,7 @@ const SearchPage = ({
   deleteFav,
   currentUser,
   checked,
+  checkFavs,
 }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(10);
@@ -37,6 +38,7 @@ const SearchPage = ({
         loading={loading}
         currentUser={currentUser}
         checked={checked}
+        checkFavs={checkFavs}
       />
       {!loading && (
         <Pagination
