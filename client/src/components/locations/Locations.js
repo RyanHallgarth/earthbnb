@@ -9,6 +9,7 @@ const Locations = ({
   deleteFav,
   currentUser,
   checked,
+  checkFavs,
 }) => {
   if (loading) {
     return <Spinner />;
@@ -23,6 +24,7 @@ const Locations = ({
             location={location}
             currentUser={currentUser}
             checked={checked}
+            checkFavs={checkFavs}
           />
         ))}
       </div>

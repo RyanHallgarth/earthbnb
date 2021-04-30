@@ -27,7 +27,8 @@ function App() {
     minBaths,
     minBedrooms,
     minBeds,
-    priceRange
+    priceRange,
+    checked
   ) => {
     setLoading(true);
     const res = await axios.get(
@@ -129,6 +130,8 @@ function App() {
       console.log(err);
       console.log(err.response);
     });
+    setCheckFavs(res.data);
+    console.log(`/api/v1/favorite/${id} returns ${checkFavs}`);
   };
 
   return (
@@ -155,6 +158,7 @@ function App() {
             deleteFav={deleteFav}
             currentUser={currentUser}
             checked={checked}
+            checkFavs={checkFavs}
           />
         </Route>
 

@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import Favorite from "@material-ui/icons/Favorite";
@@ -27,6 +27,7 @@ const LocationItem = ({
   deleteFav,
   currentUser,
   checked,
+  checkFavs,
   location: {
     id,
     name,
@@ -35,22 +36,42 @@ const LocationItem = ({
     price,
     street,
     review_scores_rating,
+    number_of_reviews,
   },
 }) => {
-  const [favorite, setFavorite] = useState(true);
+  const [favorite, setFavorite] = useState(null);
+  const [numReviews, setNumReviews] = useState(number_of_reviews);
+
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = useState(null);
 
-  const onChange = () => {
-    setFavorite(!favorite);
-    if (favorite === true) {
+  const { favorites } = currentUser;
+
+  const onChange = (event) => {
+    setFavorite(event.target.checked);
+
+    if (favorite !== true) {
       addFav(id);
+      setNumReviews(number_of_reviews + 1);
       console.log("addFav: " + id);
     } else {
       deleteFav(id);
+      setNumReviews(number_of_reviews);
       console.log("deleteFav: " + id);
     }
   };
+
+  // useEffect(() => {
+  //   for (let fav of favorites) {
+  //     if (fav === id) {
+  //       setCheck(true);
+  //     } else {
+  //       setCheck(false);
+  //     }
+  //     console.log(fav, id, check);
+  //   }
+  //   // eslint-disable-next-line
+  // }, [check]);
 
   const noImage =
     "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/480px-No_image_available.svg.png";
@@ -112,14 +133,13 @@ const LocationItem = ({
             <FormControlLabel
               control={
                 <Checkbox
-                  checked={checked(id)}
                   icon={<FavoriteBorder />}
                   checkedIcon={<Favorite />}
                   name='favorite'
                   onChange={onChange}
                 />
               }
-              label={"Favorite Location"}
+              label={numReviews}
             />
           ) : (
             <>
