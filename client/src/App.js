@@ -130,8 +130,8 @@ function App() {
       console.log(err);
       console.log(err.response);
     });
+    console.log(`/api/v1/favorite/${id} returns ${res.data}`);
     setCheckFavs(res.data);
-    console.log(`/api/v1/favorite/${id} returns ${checkFavs}`);
   };
 
   return (
