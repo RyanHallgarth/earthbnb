@@ -39,39 +39,40 @@ const LocationItem = ({
     number_of_reviews,
   },
 }) => {
-  const [favorite, setFavorite] = useState(null);
+  const [check, setCheck] = useState(false);
+
   const [numReviews, setNumReviews] = useState(number_of_reviews);
 
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = useState(null);
 
   const { favorites } = currentUser;
+  useEffect(() => {
+    for (let fav of favorites) {
+      if (fav === id) {
+        setCheck(true);
+        setNumReviews(numReviews + 1);
+      } else console.log(fav, id, check);
+    }
+    // eslint-disable-next-line
+  }, []);
+  const onChange = (id) => {
+    setCheck(!check);
 
-  const onChange = (event) => {
-    setFavorite(event.target.checked);
-
-    if (favorite !== true) {
+    if (check == false) {
       addFav(id);
-      setNumReviews(number_of_reviews + 1);
       console.log("addFav: " + id);
     } else {
       deleteFav(id);
-      setNumReviews(number_of_reviews);
       console.log("deleteFav: " + id);
     }
-  };
 
-  // useEffect(() => {
-  //   for (let fav of favorites) {
-  //     if (fav === id) {
-  //       setCheck(true);
-  //     } else {
-  //       setCheck(false);
-  //     }
-  //     console.log(fav, id, check);
-  //   }
-  //   // eslint-disable-next-line
-  // }, [check]);
+    if (check == false) {
+      setNumReviews(number_of_reviews + 1);
+    } else {
+      setNumReviews(number_of_reviews);
+    }
+  };
 
   const noImage =
     "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/480px-No_image_available.svg.png";
@@ -133,10 +134,11 @@ const LocationItem = ({
             <FormControlLabel
               control={
                 <Checkbox
+                  checked={check}
                   icon={<FavoriteBorder />}
                   checkedIcon={<Favorite />}
+                  onClick={() => onChange(id)}
                   name='favorite'
-                  onChange={onChange}
                 />
               }
               label={numReviews}
