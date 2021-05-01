@@ -4,192 +4,28 @@
 
 - [Table of Contents](<##Table of Contents>)
 - [Getting Started](<##Getting Started>)
-- [/api/auth](##api/auth)
-  - [/login](###login)
-  - [/logout](###logout)
-  - [/user](###user)
-- [/api/v1](##/v1)
-  - [/listings](###listings)
-    - [/listings/listing/:id](###listings/listing/:id)
-    - [/listings/toprated](###listings/toprated)
-  - [/favorite](###favorite)
-    - [favorite/:listingID](###favorite/:listingID')
+- [/listings](###listings)
+  - [/listings/listing/:id](###listings/listing/:id)
+  - [/listings/toprated](###listings/toprated)
+  - [/listings/uniquestays](###listings/uniquestays)
+  - [/listings/entireplace](###listings/entireplace)
 - [/listing/amenities/:id](###/listing/amenities/:id)
+
 <!-- toc -->
 
 ## Getting Started
 
-Server API is set up.
+Public API is set up.
 
-- You can run `npm install`.
-- Then `npm run start`.
+[ Base URL: https://cit41200-u4-earthbnb.uc.r.appspot.com/api/v1 ]
 
-If you’ve set up everything correctly you should only see `$ node ./src/bin/www` in your terminal.
-
-Visit `http://localhost:3000/v1` (of course if you have a `PORT` environment variable set, use that) in your browser. You should see the following message:
+Following the base you URL, you should recieve the following response:
 
 ```json
 {
-  "message": "Welcome to EarthBnB API"
+  "message": "WELCOME TO V1 API"
 }
 ```
-
----
-
----
-
-## **api/auth**
-
----
-
-### **login**
-
-This will initiate a google login
-
-- **URL**
-
-  /api/auth/login
-
-- **Method:**
-
-  `GET`
-
-- **Success Response:**
-
-  On succesful login a user object from the mongoDB will be returned
-
-  - **Code:** 200 <br />
-    **Content:**
-    ```json
-    {
-      "_id":"6071f52eeefc1bd3b2030451",
-      "providerID":"104172443333147730799",
-      "provider":"google",
-      "firstName":"Adam",
-      "lastName":"Clarkson",
-      "displayName":"Adam Clarkson",
-      "email":"atclarks@iu.edu",
-      "picture":"https://lh3.googleusercontent.com/a-/AOh14GjU3gmwv-PdxvlaWYVg8voLn_MvA653EtQkjUc2=s96-c",
-      "providerProfile":{[OBJECT]},
-      "__v":0
-    }
-    ```
-
-- **Sample Call:**
-
-  ```javascript
-  axios
-    .get('/api/auth/login')
-    .then((res) => {
-      console.log(res);
-    })
-    .catch((err) => {
-      console.log(err);
-      console.log(err.response);
-    });
-  ```
-
-- **Notes:**
-
-  This needs tested. Works in browser, I'm also not 100% sure on the sample call. -ATC 4/12
-
----
-
-### **logout**
-
-This will initiate a google logout
-
-- **URL**
-
-  /api/auth/logout
-
-- **Method:**
-
-  `GET`
-
-- **Success Response:**
-
-  On succesful logout a success message will be returned
-
-  - **Code:** 200 <br />
-    **Content:**
-    ```json
-    {
-      "message": "User has been successfully logged out."
-    }
-    ```
-
-- **Sample Call:**
-
-  ```javascript
-  fetch('/api/auth/logout')
-    .then((response) => response.json())
-    .then((data) => console.log(data));
-  ```
-
-- **Notes:**
-
-  This needs tested. Works in browser, I'm also not 100% sure on the sample call. -ATC 4/12
-
----
-
-### **user**
-
-Get information about the currently logged in user.
-
-- **URL**
-
-  /api/auth/user
-
-- **Method:**
-
-  <_The request type_>
-
-  `GET`
-
-- **Success Response:**
-
-  On succesful authenticating a loggein in user an object from the mongoDB will be returned
-
-  - **Code:** 200 <br />
-    **Content:**
-    ```json
-    {
-      "_id":"6071f52eeefc1bd3b2030451",
-      "providerID":"104172443333147730799",
-      "provider":"google",
-      "firstName":"Adam",
-      "lastName":"Clarkson",
-      "displayName":"Adam Clarkson",
-      "email":"atclarks@iu.edu",
-      "picture":"https://lh3.googleusercontent.com/a-/AOh14GjU3gmwv-PdxvlaWYVg8voLn_MvA653EtQkjUc2=s96-c",
-      "providerProfile":{[OBJECT]},
-      "__v":0
-    }
-    ```
-
-- **Error Response:**
-
-  If no user is logged in a 404 with error message will be returned
-
-  - **Code:** 404 NOT FOUND <br />
-    **Content:** `{ error: 'No user logged in' }`
-
-- **Sample Call:**
-
-  ```javascript
-  fetch('/api/auth/user')
-    .then((response) => response.json())
-    .then((data) => console.log(data));
-  ```
-
-- **Notes:**
-
----
-
----
-
-## /api/v1
 
 ---
 
@@ -199,7 +35,7 @@ Listings will return a list of listings page by page.
 
 - **URL**
 
-  /api/v1/listings?page=1&limit=5&sort_by=name&order=ASC&price[gte]=0&price[lte]=500&min_guests=5&min_bathrooms=2&min_bedrooms=2&min_beds=3
+  /listings?page=1&limit=5&sort_by=name&order=ASC&price[gte]=0&price[lte]=500&min_guests=5&min_bathrooms=2&min_bedrooms=2&min_beds=3
 
 - **Method:**
 
@@ -294,7 +130,7 @@ Listings will return a list of listings page by page.
 
   var options = {
     method: 'GET',
-    url: 'http:///api/v1/listings',
+    url: 'http://https://cit41200-u4-earthbnb.uc.r.appspot.com/api/v1/listings',
     params: {
       page: '1',
       limit: '5',
@@ -329,7 +165,7 @@ Returns a single listing based on id
 
 - **URL**
 
-  /api/v1/listings/listing/:id
+  /listings/listing/:id
 
 - **Method:**
 
@@ -454,7 +290,8 @@ Returns a single listing based on id
 
   var config = {
     method: 'get',
-    url: 'http://localhost:8080/api/v1/listings/7920539',
+    url:
+      'https://cit41200-u4-earthbnb.uc.r.appspot.com/api/v1/listings/listing/7920539',
     headers: {},
   };
 
@@ -477,7 +314,7 @@ A [limit] number of top rated listings will be returned.
 
 - **URL**
 
-  /api/v1/listings/toprated?limit=10
+  /listings/toprated?limit=10
 
 - **Method:**
 
@@ -522,7 +359,8 @@ A [limit] number of top rated listings will be returned.
 
   var config = {
     method: 'get',
-    url: 'http://localhost:8080/api/v1/listings/toprated?limit=5',
+    url:
+      'https://cit41200-u4-earthbnb.uc.r.appspot.com/api/v1/listings/toprated?limit=5',
     headers: {},
   };
 
@@ -541,7 +379,7 @@ A [limit] number of unique stays listings will be returned. Returns top rate tha
 
 - **URL**
 
-  /api/v1/listings/uniquestays?limit=10
+  /listings/uniquestays?limit=10
 
 - **Method:**
 
@@ -586,7 +424,8 @@ A [limit] number of unique stays listings will be returned. Returns top rate tha
 
   var config = {
     method: 'get',
-    url: 'http://localhost:8080/api/v1/listings/uniquestays?limit=5',
+    url:
+      'https://cit41200-u4-earthbnb.uc.r.appspot.com/api/v1/listings/uniquestays?limit=5',
     headers: {},
   };
 
@@ -605,7 +444,7 @@ A [limit] number of unique stays listings will be returned. Returns top rate tha
 
 - **URL**
 
-  http://localhost:8080/api/v1/listings/entireplace?limit=10&accomodates=10
+  https://cit41200-u4-earthbnb.uc.r.appspot.com/api/v1/listings/entireplace?limit=10&accomodates=10
 
 - **Method:**
 
@@ -652,7 +491,7 @@ A [limit] number of unique stays listings will be returned. Returns top rate tha
   var config = {
     method: 'get',
     url:
-      'http://localhost:8080/api/v1/listings/entireplace?limit=10&accomodates=10',
+      'https://cit41200-u4-earthbnb.uc.r.appspot.com/api/v1/listings/entireplace?limit=10&accomodates=10',
     headers: {},
   };
 
@@ -664,46 +503,6 @@ A [limit] number of unique stays listings will be returned. Returns top rate tha
       console.log(error);
     });
   ```
-
-### **favorite/:listingID'**
-
-returns a bool if a logged in user has favorited [listingID] property
-
-- **URL**
-
-  http://localhost:8080/api/v1/favorite/:listingID
-
-- **Method:**
-
-  `GET`
-
-- **Success Response:**
-
-  If successful you will be returned true if user fovaorties a property of false if they do not.
-
-### **favorite/:listingID'**
-
-Adds the listing to a logged in users list of favorite properties.
-
-- **URL**
-
-  http://localhost:8080/api/v1/favorite/:listingID
-
-- **Method:**
-
-  `POST`
-
-### **favorite/:listingID'**
-
-Removes the listing from a logged in users list of favorite properties.
-
-- **URL**
-
-  http://localhost:8080/api/v1/favorite/:listingID
-
-- **Method:**
-
-  `DELETE`
 
 ---
 
