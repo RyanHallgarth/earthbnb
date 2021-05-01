@@ -13,6 +13,7 @@
     - [/listings/listing/:id](###listings/listing/:id)
     - [/listings/toprated](###listings/toprated)
   - [/favorite](###favorite)
+    - [favorite/:listingID](###favorite/:listingID')
 
 <!-- toc -->
 
@@ -222,9 +223,9 @@ Listings will return a list of listings page by page.
 
   `order=[ASC|DESC]`
 
-  `price=[number]` Not Working
+  `price=[number]`
 
-  `price=[number]` Not Working
+  `price=[number]`
 
   `min_guests=[number]`
 
@@ -319,7 +320,6 @@ Listings will return a list of listings page by page.
   ```
 
 - **Notes:**
-  - This endpoint is still a work in progress
 
 ---
 
