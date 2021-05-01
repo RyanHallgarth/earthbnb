@@ -4,6 +4,10 @@
 
 A final project for CIT41200, We will build a knock off/ cheap immitation of airBnB using housing data for the Seattle market area.
 
+## Working Demo
+
+Navigate [here](https://cit41200-u4-earthbnb.uc.r.appspot.com/) for a workign demo of the site.
+
 ## Installation
 
 Fill out the the `.env.sample` file and rename as `.env`.
