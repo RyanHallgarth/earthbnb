@@ -49,7 +49,7 @@ router.get(
     if (process.env.NODE_ENV === 'production') {
       res.redirect('/');
     } else {
-      res.redirect('http://localhost:3000/');
+      res.redirect('/');
     }
   }
 );

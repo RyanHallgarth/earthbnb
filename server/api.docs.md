@@ -19,7 +19,7 @@ Public API is set up.
 
 [ Base URL: https://cit41200-u4-earthbnb.uc.r.appspot.com/api/v1 ]
 
-Following the base you URL, you should recieve the following response:
+Following the base you URL, you should receive the following response:
 
 ```json
 {
