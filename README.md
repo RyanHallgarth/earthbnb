@@ -1,3 +1,5 @@
+![EarthBnB Banner](https://media.github.iu.edu/download/repository/79788/images/3eb16300-aa6a-11eb-858d-c530bd5db2c0)
+
 # EarthBnB
 
 A final project for CIT41200, We will build a knock off/ cheap immitation of airBnB using housing data for the Seattle market area.
