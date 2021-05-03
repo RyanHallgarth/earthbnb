@@ -6,7 +6,7 @@ A final project for CIT41200, We will build a knock off/ cheap immitation of air
 
 ## Working Demo
 
-Navigate [here](https://cit41200-u4-earthbnb.uc.r.appspot.com/) for a working demo of the site.
+Navigate [here](https://earthbnb.atclarkson.com) for a working demo of the site.
 
 ## Installation
 
