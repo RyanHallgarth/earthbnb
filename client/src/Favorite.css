@@ -12,3 +12,17 @@
 .fav-container > h2 {
   margin-right: 40px;
 }
+
+.fav-container > button {
+  background-color: #3e930a;
+  color: white;
+  text-transform: inherit;
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+.fav-container > button:hover {
+  background-color: white;
+  color: #3e930a;
+  border: 1px solid #3e930a;
+}

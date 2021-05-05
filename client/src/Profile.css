@@ -1,0 +1,12 @@
+.user-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  flex-direction: column;
+}
+
+.user-container > img {
+  border-radius: 50%;
+  border: 1px solid gray;
+}

@@ -48,7 +48,6 @@ function App() {
     console.log("clicky");
     setLocations(res.data.content);
     setLoading(false);
-    console.log(locations);
   };
 
   const highestRated = async () => {
@@ -84,7 +83,6 @@ function App() {
   const logOut = async () => {
     const res = await axios.get(`/api/auth/logout`);
     setCurrentUser({});
-    console.log("Log Out!");
   };
 
   const getUser = async () => {
@@ -96,7 +94,6 @@ function App() {
 
   const addFav = async (id) => {
     const res = await axios.post(`api/v1/favorite/${id}`);
-    console.log(`api/v1/favorite/${id}`);
   };
 
   const deleteFav = async (id) => {

@@ -1,5 +1,6 @@
-import { React, useState, useEffect } from "react";
+import { React, useEffect } from "react";
 import Favorites from "../favorites/Favorites";
+import "../../Profile.css";
 
 const Profile = ({
   currentUser,
@@ -9,7 +10,7 @@ const Profile = ({
   displayFav,
   favIdArr,
 }) => {
-  const { displayName, email, picture } = currentUser;
+  const { displayName, email, picture, firstName } = currentUser;
 
   useEffect(() => {
     getUser();
@@ -19,10 +20,12 @@ const Profile = ({
 
   return (
     <div>
-      <img src={picture} alt='' style={{ width: "150px" }} />
-      <div>{displayName}</div>
-      <div>{email}</div>
-
+      <div className='user-container'>
+        <h1>Welcome, {firstName}!</h1>
+        <img src={picture} alt='' style={{ width: "150px" }} />
+        <div>{displayName}</div>
+        <div>{email}</div>
+      </div>
       <Favorites
         favorites={favorites}
         deleteFav={deleteFav}
