@@ -76,8 +76,7 @@ const LocationItem = ({
     }
   };
 
-  const noImage =
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/480px-No_image_available.svg.png";
+  const noImage = "https://i.stack.imgur.com/y9DpT.jpg";
 
   const handlePopoverOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -90,14 +89,14 @@ const LocationItem = ({
   const open = Boolean(anchorEl);
 
   return (
-    <div className="search-result card grid-1">
+    <div className='search-result card grid-1'>
       {thumbnail_url ? (
-        <img src={thumbnail_url} alt="" />
+        <img src={thumbnail_url} alt='' />
       ) : (
-        <img src={noImage} alt="" />
+        <img src={noImage} alt='' />
       )}
-      <div className="info">
-        <div className="info-top">
+      <div className='info'>
+        <div className='info-top'>
           <p>{street}</p>
           <h3>{name}</h3>
           <p>____</p>
@@ -112,14 +111,14 @@ const LocationItem = ({
             </p>
           )}
         </div>
-        <div className="info-bottom">
-          <div className="stars">
+        <div className='info-bottom'>
+          <div className='stars'>
             <h2>
-              <StarIcon className="star" />
+              <StarIcon className='star' />
               {review_scores_rating ? (
-                <strong className="strong">{review_scores_rating}</strong>
+                <strong className='strong'>{review_scores_rating}</strong>
               ) : (
-                <em className="small-em">No Ratings Yet!</em>
+                <em className='small-em'>No Ratings Yet!</em>
               )}
             </h2>
           </div>
@@ -127,8 +126,8 @@ const LocationItem = ({
           <Button
             to={`/location/${id}`}
             component={Link}
-            variant="outlined"
-            className="more-btn"
+            variant='outlined'
+            className='more-btn'
           >
             More Details
           </Button>
@@ -140,7 +139,7 @@ const LocationItem = ({
                   icon={<FavoriteBorder />}
                   checkedIcon={<Favorite />}
                   onClick={() => onChange(id)}
-                  name="favorite"
+                  name='favorite'
                 />
               }
               label={numReviews}
@@ -149,14 +148,14 @@ const LocationItem = ({
             <>
               <Typography
                 aria-owns={open ? "mouse-over-popover" : undefined}
-                aria-haspopup="true"
+                aria-haspopup='true'
                 onMouseEnter={handlePopoverOpen}
                 onMouseLeave={handlePopoverClose}
               >
                 <FavoriteBorderIcon />
               </Typography>
               <Popover
-                id="mouse-over-popover"
+                id='mouse-over-popover'
                 className={classes.popover}
                 classes={{
                   paper: classes.paper,
@@ -178,7 +177,7 @@ const LocationItem = ({
               </Popover>
             </>
           )}
-          <div className="price">
+          <div className='price'>
             <h2>${price}</h2>
 
             <em>per night</em>
