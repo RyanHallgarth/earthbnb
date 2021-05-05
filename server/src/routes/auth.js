@@ -46,11 +46,7 @@ router.get(
   '/return',
   passport.authenticate('google', { failureRedirect: '/users/login' }),
   (req, res) => {
-    if (process.env.NODE_ENV === 'production') {
       res.redirect('/');
-    } else {
-      res.redirect('http://localhost:3000/');
-    }
   }
 );
 
