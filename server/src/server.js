@@ -17,7 +17,7 @@ const MongoStore = require('connect-mongo');
 
 const app = express();
 
-//app.use('/', express.static('public'));
+app.use('/', express.static('public'));
 
 // CONNECT TO MONGO VIA MONGOOSE
 const mongoosePromise = mongoose
